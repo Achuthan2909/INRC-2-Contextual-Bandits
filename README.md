@@ -22,6 +22,6 @@ INRC-Contextual-Bandits/
 ## Reference Docs
 
 - `ref_docs/INRC2_Project_Instructions.md` — step-by-step implementation guide
-- `ref_docs/INRC-II Contextual Bandits Project Proposal.pdf` — project proposal
+- `ref_docs/project_reference.pdf` — project proposal
 - `ref_docs/INRC2.pdf` — competition problem description
 - `ref_docs/math_model-updated.pdf` — mathematical model
