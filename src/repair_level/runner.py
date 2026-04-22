@@ -113,7 +113,12 @@ def run_repairs(
     strategy_counts: dict[str, int] = {s.name: 0 for s in strategies}
     strat_by_name: dict[str, RepairStrategy] = {s.name: s for s in strategies}
 
+    observe_state = getattr(selector, "observe_state", None)
+
     for round_idx in range(num_rounds):
+        if callable(observe_state):
+            observe_state(current_result, round_idx, num_rounds)
+
         chosen_strategy: RepairStrategy | None = None
         chosen_violation: dict[str, Any] | None = None
 

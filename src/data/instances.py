@@ -204,16 +204,27 @@ def _week_combos(
     horizon: int,
     k: int,
     rng: random.Random,
+    with_replacement: bool = False,
 ) -> list[tuple[int, ...]]:
-    """Up to ``k`` distinct ordered tuples of ``horizon`` distinct WD indices."""
-    if horizon > n_week_files or horizon < 1 or k < 1:
+    """Up to ``k`` distinct ordered tuples of ``horizon`` WD indices.
+
+    If ``with_replacement`` is False (default), each tuple contains distinct
+    indices (requires ``horizon <= n_week_files``). If True, the same WD file
+    may appear multiple times in one tuple (e.g. ``(0, 0, 0, 0)``).
+    """
+    if horizon < 1 or k < 1:
+        return []
+    if not with_replacement and horizon > n_week_files:
         return []
     uniq: dict[tuple[int, ...], None] = {}
     max_attempts = max(k * 100, k + 50)
     attempts = 0
     while len(uniq) < k and attempts < max_attempts:
         attempts += 1
-        t = tuple(rng.sample(range(n_week_files), horizon))
+        if with_replacement:
+            t = tuple(rng.randrange(n_week_files) for _ in range(horizon))
+        else:
+            t = tuple(rng.sample(range(n_week_files), horizon))
         uniq.setdefault(t, None)
     return list(uniq.keys())
 
@@ -226,6 +237,7 @@ def enumerate_instances(
     histories_per_scenario: int | None = None,
     seed: int = 0,
     shuffle: bool = True,
+    with_replacement: bool = False,
 ) -> Iterator[INRCInstance]:
     """Yield :class:`INRCInstance` objects lazily (JSON loaded per yield).
 
@@ -297,7 +309,8 @@ def enumerate_instances(
         )
         for h_idx in range(h_max):
             combos = _week_combos(
-                n_wd, W, week_combos_per_scenario, rng
+                n_wd, W, week_combos_per_scenario, rng,
+                with_replacement=with_replacement,
             )
             for combo in combos:
                 work.append((ref, h_idx, combo))

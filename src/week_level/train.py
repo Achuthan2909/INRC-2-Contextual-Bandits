@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import time
 from collections import Counter
@@ -12,6 +13,7 @@ import numpy as np
 
 from bandit.linucb import LinUCB
 from data.instances import enumerate_instances
+from data.splits import SPLITS, split_instances
 from schedule.penalty import compute_penalty, _compute_week_history
 from schedule.representation import DAY_NAMES_FULL, Schedule
 from week_level.arms.base import WeekArm
@@ -85,7 +87,8 @@ def _run_instance_forced(
 def train_linucb(
     arms: list[WeekArm],
     *,
-    dataset_root: str = "Dataset/datasets_json",
+    split: str = "train",
+    dataset_root: str | None = None,
     alpha: float = 1.0,
     max_instances: int | None = None,
     week_combos_per_scenario: int = 20,
@@ -94,6 +97,7 @@ def train_linucb(
     checkpoint_path: str | Path = "runs/linucb_week_level.npz",
     log_every: int = 10,
     warm_start_rounds: int = 0,
+    with_replacement: bool = False,
 ) -> LinUCB:
     """Stream training instances, update one shared LinUCB, save checkpoint.
 
@@ -109,18 +113,31 @@ def train_linucb(
 
     rs = float(reward_scale) if reward_scale else 1.0
 
-    stream = enumerate_instances(
-        dataset_root,
-        seed=seed,
-        shuffle=True,
-        week_combos_per_scenario=week_combos_per_scenario,
-    )
+    if dataset_root is not None:
+        stream = enumerate_instances(
+            dataset_root,
+            seed=seed,
+            shuffle=True,
+            week_combos_per_scenario=week_combos_per_scenario,
+            with_replacement=with_replacement,
+        )
+    else:
+        stream = split_instances(
+            split,
+            seed=seed,
+            shuffle=True,
+            week_combos_per_scenario=week_combos_per_scenario,
+            with_replacement=with_replacement,
+        )
 
     arm_names = [a.name for a in arms]
     linucb: LinUCB | None = None
     total_rounds = 0
     pick_counts: Counter[str] = Counter()
     scaled_reward_values: list[float] = []
+    pick_trajectory: list[str] = []
+    theta_snapshots: list[list[list[float]]] = []
+    snapshot_rounds: list[int] = []
     instance_count = 0
     warm_rounds_done = 0
     t_train0 = time.perf_counter()
@@ -170,8 +187,14 @@ def train_linucb(
                 scaled_reward_values.append(float(r) / rs)
             for name in arms_picked_names:
                 pick_counts[name] += 1
+                pick_trajectory.append(name)
             total_rounds += len(inst.weeks)
             instance_count += 1
+            if log_every > 0 and instance_count % log_every == 0:
+                theta_snapshots.append(
+                    [linucb.theta(i).tolist() for i in range(len(arms))]
+                )
+                snapshot_rounds.append(total_rounds)
             log.info(
                 "[%d] %s | %.2fs | weeks=%d | mean_unscaled_traj=%.2f",
                 instance_count,
@@ -208,6 +231,7 @@ def train_linucb(
         raise RuntimeError("No instance completed training (empty stream or all skipped)")
 
     training_config: dict[str, Any] = {
+        "split": split,
         "dataset_root": dataset_root,
         "alpha": alpha,
         "max_instances": max_instances,
@@ -232,6 +256,18 @@ def train_linucb(
         checkpoint_path,
         metadata=metadata,
     )
+    sidecar_path = Path(checkpoint_path).with_suffix(".trajectory.json")
+    sidecar_path.parent.mkdir(parents=True, exist_ok=True)
+    sidecar_path.write_text(json.dumps({
+        "arm_names": arm_names,
+        "feature_labels": list(FEATURE_LABELS),
+        "pick_trajectory": pick_trajectory,
+        "reward_trajectory_scaled": scaled_reward_values,
+        "theta_snapshots": theta_snapshots,
+        "snapshot_rounds": snapshot_rounds,
+        "warm_start_rounds": warm_start_rounds,
+        "training_config": training_config,
+    }))
     log.info(
         "Saved checkpoint to %s (%.1fs, %d instances, %d rounds)",
         checkpoint_path,
@@ -245,7 +281,14 @@ def train_linucb(
 def _cli() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     p = argparse.ArgumentParser(description="Train week-level LinUCB (cross-instance).")
-    p.add_argument("--dataset-root", default="Dataset/datasets_json")
+    p.add_argument(
+        "--split", choices=SPLITS, default="train",
+        help="Named split (train/dev/val/test). Ignored if --dataset-root is given.",
+    )
+    p.add_argument(
+        "--dataset-root", default=None,
+        help="Explicit dataset root; overrides --split.",
+    )
     p.add_argument("--alpha", type=float, default=1.0)
     p.add_argument("--max-instances", type=int, default=None)
     p.add_argument("--week-combos-per-scenario", type=int, default=20)
@@ -267,12 +310,18 @@ def _cli() -> None:
         default=0,
         help="Force round-robin arm selection for the first N bandit rounds before letting LinUCB choose.",
     )
+    p.add_argument(
+        "--with-replacement",
+        action="store_true",
+        help="Allow the same WD file to appear multiple times in a week-combo (e.g. (0, 0, 0, 0)).",
+    )
     args = p.parse_args()
 
     arms = [registry[name]() for name in args.arms]
 
     train_linucb(
         arms,
+        split=args.split,
         dataset_root=args.dataset_root,
         alpha=args.alpha,
         max_instances=args.max_instances,
@@ -282,6 +331,7 @@ def _cli() -> None:
         checkpoint_path=args.checkpoint,
         log_every=args.log_every,
         warm_start_rounds=args.warm_start_rounds,
+        with_replacement=args.with_replacement,
     )
 
 
