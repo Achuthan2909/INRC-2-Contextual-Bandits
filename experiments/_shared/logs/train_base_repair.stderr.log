@@ -1,0 +1,111 @@
+INFO [1] n030w4 | 1.85s | rounds=500 | P: 26430 -> 15690 (Δ=+10740) | hard={'H1': 0, 'H2': 0, 'H3': 15, 'H4': 0}
+INFO [2] n050w4 | 3.26s | rounds=500 | P: 49655 -> 33275 (Δ=+16380) | hard={'H1': 0, 'H2': 0, 'H3': 11, 'H4': 0}
+INFO [3] n120w4 | 8.24s | rounds=500 | P: 140805 -> 98260 (Δ=+42545) | hard={'H1': 0, 'H2': 0, 'H3': 70, 'H4': 0}
+INFO [4] n060w4 | 4.23s | rounds=500 | P: 92440 -> 66155 (Δ=+26285) | hard={'H1': 0, 'H2': 0, 'H3': 34, 'H4': 0}
+INFO [5] n050w4 | 3.32s | rounds=500 | P: 46155 -> 28430 (Δ=+17725) | hard={'H1': 0, 'H2': 0, 'H3': 20, 'H4': 0}
+INFO [6] n120w4 | 8.20s | rounds=500 | P: 141960 -> 101775 (Δ=+40185) | hard={'H1': 0, 'H2': 0, 'H3': 77, 'H4': 0}
+INFO [7] n040w8 | 7.16s | rounds=500 | P: 94065 -> 58525 (Δ=+35540) | hard={'H1': 0, 'H2': 0, 'H3': 33, 'H4': 0}
+INFO [8] n050w4 | 4.20s | rounds=500 | P: 49540 -> 30895 (Δ=+18645) | hard={'H1': 0, 'H2': 0, 'H3': 18, 'H4': 0}
+INFO [9] n100w8 | 13.54s | rounds=500 | P: 191230 -> 154215 (Δ=+37015) | hard={'H1': 0, 'H2': 0, 'H3': 89, 'H4': 0}
+INFO [10] n120w4 | 8.58s | rounds=500 | P: 140150 -> 99995 (Δ=+40155) | hard={'H1': 0, 'H2': 0, 'H3': 69, 'H4': 0}
+INFO [10] mean_scaled_reward(last≤2000)=1.3135  top5_arms={extend_short_rest=4150, extend_short_same_shift_streak=608, fix_incomplete_weekend=83, extend_short_work_streak=37, break_long_rest_mid=32}
+INFO [11] n100w8 | 13.87s | rounds=500 | P: 193225 -> 160090 (Δ=+33135) | hard={'H1': 0, 'H2': 0, 'H3': 114, 'H4': 0}
+INFO [12] n050w8 | 7.05s | rounds=500 | P: 90310 -> 63900 (Δ=+26410) | hard={'H1': 0, 'H2': 0, 'H3': 65, 'H4': 0}
+INFO [13] n120w4 | 8.48s | rounds=500 | P: 143335 -> 97935 (Δ=+45400) | hard={'H1': 0, 'H2': 0, 'H3': 61, 'H4': 0}
+INFO [14] n060w8 | 8.41s | rounds=500 | P: 128500 -> 85905 (Δ=+42595) | hard={'H1': 0, 'H2': 0, 'H3': 63, 'H4': 0}
+INFO [15] n080w4 | 5.68s | rounds=500 | P: 104825 -> 77265 (Δ=+27560) | hard={'H1': 0, 'H2': 0, 'H3': 34, 'H4': 0}
+INFO [16] n120w8 | 17.16s | rounds=500 | P: 282425 -> 217915 (Δ=+64510) | hard={'H1': 0, 'H2': 0, 'H3': 172, 'H4': 0}
+INFO [17] n100w8 | 13.70s | rounds=500 | P: 195690 -> 158740 (Δ=+36950) | hard={'H1': 0, 'H2': 0, 'H3': 104, 'H4': 0}
+INFO [18] n050w4 | 3.46s | rounds=500 | P: 51795 -> 29315 (Δ=+22480) | hard={'H1': 0, 'H2': 0, 'H3': 23, 'H4': 0}
+INFO [19] n100w4 | 6.90s | rounds=500 | P: 98765 -> 74525 (Δ=+24240) | hard={'H1': 0, 'H2': 0, 'H3': 42, 'H4': 0}
+INFO [20] n060w4 | 4.30s | rounds=500 | P: 93980 -> 65415 (Δ=+28565) | hard={'H1': 0, 'H2': 0, 'H3': 37, 'H4': 0}
+INFO [20] mean_scaled_reward(last≤2000)=1.1223  top5_arms={extend_short_rest=8866, extend_short_same_shift_streak=872, fix_incomplete_weekend=83, extend_short_work_streak=37, break_long_rest_mid=32}
+INFO [21] n100w8 | 13.91s | rounds=500 | P: 190965 -> 161610 (Δ=+29355) | hard={'H1': 0, 'H2': 0, 'H3': 96, 'H4': 0}
+INFO [22] n080w8 | 11.25s | rounds=500 | P: 193875 -> 156360 (Δ=+37515) | hard={'H1': 0, 'H2': 0, 'H3': 74, 'H4': 0}
+INFO [23] n050w8 | 7.09s | rounds=500 | P: 93830 -> 67085 (Δ=+26745) | hard={'H1': 0, 'H2': 0, 'H3': 74, 'H4': 0}
+INFO [24] n030w4 | 1.90s | rounds=500 | P: 26265 -> 15045 (Δ=+11220) | hard={'H1': 0, 'H2': 0, 'H3': 8, 'H4': 0}
+INFO [25] n120w8 | 17.03s | rounds=500 | P: 284360 -> 228375 (Δ=+55985) | hard={'H1': 0, 'H2': 0, 'H3': 172, 'H4': 0}
+INFO [26] n120w4 | 8.66s | rounds=500 | P: 142845 -> 98210 (Δ=+44635) | hard={'H1': 0, 'H2': 0, 'H3': 76, 'H4': 0}
+INFO [27] n120w8 | 17.30s | rounds=500 | P: 281600 -> 224915 (Δ=+56685) | hard={'H1': 0, 'H2': 0, 'H3': 160, 'H4': 0}
+INFO [28] n030w8 | 4.01s | rounds=500 | P: 55810 -> 35060 (Δ=+20750) | hard={'H1': 0, 'H2': 1, 'H3': 21, 'H4': 0}
+INFO [29] n030w4 | 1.86s | rounds=500 | P: 25795 -> 15530 (Δ=+10265) | hard={'H1': 0, 'H2': 0, 'H3': 16, 'H4': 0}
+INFO [30] n030w4 | 2.00s | rounds=500 | P: 27105 -> 16675 (Δ=+10430) | hard={'H1': 0, 'H2': 0, 'H3': 9, 'H4': 0}
+INFO [30] mean_scaled_reward(last≤2000)=0.9813  top5_arms={extend_short_rest=12578, extend_short_same_shift_streak=1933, fix_incomplete_weekend=162, extend_short_work_streak=94, break_long_work_streak_end=68}
+INFO [31] n080w4 | 5.74s | rounds=500 | P: 100955 -> 74005 (Δ=+26950) | hard={'H1': 0, 'H2': 0, 'H3': 37, 'H4': 0}
+INFO [32] n050w8 | 6.86s | rounds=500 | P: 92420 -> 70075 (Δ=+22345) | hard={'H1': 0, 'H2': 2, 'H3': 60, 'H4': 0}
+INFO [33] n100w4 | 7.12s | rounds=500 | P: 97460 -> 72660 (Δ=+24800) | hard={'H1': 0, 'H2': 0, 'H3': 35, 'H4': 0}
+INFO [34] n060w8 | 8.23s | rounds=500 | P: 127600 -> 86540 (Δ=+41060) | hard={'H1': 0, 'H2': 0, 'H3': 65, 'H4': 0}
+INFO [35] n080w8 | 10.81s | rounds=500 | P: 198715 -> 162345 (Δ=+36370) | hard={'H1': 0, 'H2': 0, 'H3': 80, 'H4': 0}
+INFO [36] n120w8 | 16.36s | rounds=500 | P: 282930 -> 223720 (Δ=+59210) | hard={'H1': 0, 'H2': 0, 'H3': 173, 'H4': 0}
+INFO [37] n080w8 | 10.72s | rounds=500 | P: 194640 -> 154865 (Δ=+39775) | hard={'H1': 0, 'H2': 0, 'H3': 73, 'H4': 0}
+INFO [38] n050w4 | 3.45s | rounds=500 | P: 49455 -> 28415 (Δ=+21040) | hard={'H1': 0, 'H2': 0, 'H3': 21, 'H4': 0}
+INFO [39] n030w8 | 3.73s | rounds=500 | P: 54790 -> 34605 (Δ=+20185) | hard={'H1': 0, 'H2': 0, 'H3': 20, 'H4': 0}
+INFO [40] n040w4 | 2.83s | rounds=500 | P: 47630 -> 25565 (Δ=+22065) | hard={'H1': 0, 'H2': 1, 'H3': 17, 'H4': 0}
+INFO [40] mean_scaled_reward(last≤2000)=1.0307  top5_arms={extend_short_rest=17048, extend_short_same_shift_streak=2456, fix_incomplete_weekend=162, extend_short_work_streak=94, break_long_work_streak_end=74}
+INFO [41] n040w8 | 5.59s | rounds=500 | P: 95960 -> 62040 (Δ=+33920) | hard={'H1': 0, 'H2': 0, 'H3': 30, 'H4': 0}
+INFO [42] n050w4 | 3.39s | rounds=500 | P: 50505 -> 28965 (Δ=+21540) | hard={'H1': 0, 'H2': 0, 'H3': 21, 'H4': 0}
+INFO [43] n080w4 | 5.44s | rounds=500 | P: 104615 -> 76280 (Δ=+28335) | hard={'H1': 0, 'H2': 0, 'H3': 37, 'H4': 0}
+INFO [44] n040w4 | 2.82s | rounds=500 | P: 50050 -> 27360 (Δ=+22690) | hard={'H1': 0, 'H2': 1, 'H3': 14, 'H4': 0}
+INFO [45] n120w4 | 8.23s | rounds=500 | P: 141925 -> 99555 (Δ=+42370) | hard={'H1': 0, 'H2': 0, 'H3': 56, 'H4': 0}
+INFO [46] n040w8 | 5.67s | rounds=500 | P: 96020 -> 65120 (Δ=+30900) | hard={'H1': 0, 'H2': 0, 'H3': 24, 'H4': 0}
+INFO [47] n100w4 | 6.45s | rounds=500 | P: 98435 -> 73360 (Δ=+25075) | hard={'H1': 0, 'H2': 0, 'H3': 37, 'H4': 0}
+INFO [48] n120w8 | 16.44s | rounds=500 | P: 282560 -> 218355 (Δ=+64205) | hard={'H1': 0, 'H2': 0, 'H3': 176, 'H4': 0}
+INFO [49] n050w8 | 6.78s | rounds=500 | P: 90560 -> 67755 (Δ=+22805) | hard={'H1': 0, 'H2': 1, 'H3': 57, 'H4': 0}
+INFO [50] n080w4 | 5.76s | rounds=500 | P: 107465 -> 76980 (Δ=+30485) | hard={'H1': 0, 'H2': 0, 'H3': 34, 'H4': 0}
+INFO [50] mean_scaled_reward(last≤2000)=1.4257  top5_arms={extend_short_rest=21697, extend_short_same_shift_streak=2781, fix_incomplete_weekend=162, extend_short_work_streak=94, break_long_work_streak_end=89}
+INFO [51] n120w4 | 8.21s | rounds=500 | P: 140965 -> 97915 (Δ=+43050) | hard={'H1': 0, 'H2': 0, 'H3': 79, 'H4': 0}
+INFO [52] n080w8 | 11.00s | rounds=500 | P: 193980 -> 160685 (Δ=+33295) | hard={'H1': 0, 'H2': 0, 'H3': 73, 'H4': 0}
+INFO [53] n060w4 | 4.19s | rounds=500 | P: 89535 -> 64745 (Δ=+24790) | hard={'H1': 0, 'H2': 0, 'H3': 32, 'H4': 0}
+INFO [54] n060w8 | 8.21s | rounds=500 | P: 127175 -> 87655 (Δ=+39520) | hard={'H1': 0, 'H2': 0, 'H3': 82, 'H4': 0}
+INFO [55] n030w4 | 1.75s | rounds=500 | P: 25595 -> 16475 (Δ=+9120) | hard={'H1': 0, 'H2': 0, 'H3': 17, 'H4': 0}
+INFO [56] n080w4 | 5.51s | rounds=500 | P: 103830 -> 75550 (Δ=+28280) | hard={'H1': 0, 'H2': 0, 'H3': 40, 'H4': 0}
+INFO [57] n050w4 | 3.53s | rounds=500 | P: 49460 -> 31065 (Δ=+18395) | hard={'H1': 0, 'H2': 0, 'H3': 17, 'H4': 0}
+INFO [58] n030w8 | 3.74s | rounds=500 | P: 54705 -> 34850 (Δ=+19855) | hard={'H1': 0, 'H2': 0, 'H3': 21, 'H4': 0}
+INFO [59] n040w8 | 5.56s | rounds=500 | P: 92995 -> 57785 (Δ=+35210) | hard={'H1': 0, 'H2': 0, 'H3': 36, 'H4': 0}
+INFO [60] n080w8 | 10.96s | rounds=500 | P: 198885 -> 160160 (Δ=+38725) | hard={'H1': 0, 'H2': 0, 'H3': 72, 'H4': 0}
+INFO [60] mean_scaled_reward(last≤2000)=1.1219  top5_arms={extend_short_rest=25997, extend_short_same_shift_streak=3314, fix_incomplete_weekend=224, break_long_work_streak_end=160, extend_short_work_streak=95}
+INFO [61] n060w8 | 8.39s | rounds=500 | P: 130600 -> 87305 (Δ=+43295) | hard={'H1': 0, 'H2': 0, 'H3': 67, 'H4': 0}
+INFO [62] n120w4 | 8.29s | rounds=500 | P: 138590 -> 97685 (Δ=+40905) | hard={'H1': 0, 'H2': 0, 'H3': 71, 'H4': 0}
+INFO [63] n030w4 | 1.91s | rounds=500 | P: 28785 -> 15730 (Δ=+13055) | hard={'H1': 0, 'H2': 0, 'H3': 12, 'H4': 0}
+INFO [64] n060w8 | 8.25s | rounds=500 | P: 129470 -> 91375 (Δ=+38095) | hard={'H1': 0, 'H2': 0, 'H3': 81, 'H4': 0}
+INFO [65] n030w4 | 1.84s | rounds=500 | P: 26590 -> 15145 (Δ=+11445) | hard={'H1': 0, 'H2': 0, 'H3': 20, 'H4': 0}
+INFO [66] n080w4 | 5.46s | rounds=500 | P: 106040 -> 73720 (Δ=+32320) | hard={'H1': 0, 'H2': 0, 'H3': 35, 'H4': 0}
+INFO [67] n080w4 | 5.43s | rounds=500 | P: 105330 -> 71820 (Δ=+33510) | hard={'H1': 0, 'H2': 0, 'H3': 33, 'H4': 0}
+INFO [68] n100w4 | 6.70s | rounds=500 | P: 98205 -> 72600 (Δ=+25605) | hard={'H1': 0, 'H2': 0, 'H3': 46, 'H4': 0}
+INFO [69] n030w4 | 1.81s | rounds=500 | P: 26295 -> 16020 (Δ=+10275) | hard={'H1': 0, 'H2': 0, 'H3': 21, 'H4': 0}
+INFO [70] n100w8 | 13.27s | rounds=500 | P: 190330 -> 156905 (Δ=+33425) | hard={'H1': 0, 'H2': 0, 'H3': 93, 'H4': 0}
+INFO [70] mean_scaled_reward(last≤2000)=1.0282  top5_arms={extend_short_rest=29871, extend_short_same_shift_streak=4168, fix_incomplete_weekend=402, break_long_work_streak_end=162, extend_short_work_streak=123}
+INFO [71] n030w4 | 1.97s | rounds=500 | P: 24320 -> 15900 (Δ=+8420) | hard={'H1': 0, 'H2': 1, 'H3': 8, 'H4': 0}
+INFO [72] n050w4 | 3.65s | rounds=500 | P: 51285 -> 33580 (Δ=+17705) | hard={'H1': 0, 'H2': 0, 'H3': 25, 'H4': 0}
+INFO [73] n100w8 | 13.60s | rounds=500 | P: 192355 -> 158865 (Δ=+33490) | hard={'H1': 0, 'H2': 0, 'H3': 101, 'H4': 0}
+INFO [74] n040w8 | 5.68s | rounds=500 | P: 95490 -> 63720 (Δ=+31770) | hard={'H1': 0, 'H2': 0, 'H3': 33, 'H4': 0}
+INFO [75] n080w8 | 10.94s | rounds=500 | P: 195055 -> 164155 (Δ=+30900) | hard={'H1': 0, 'H2': 0, 'H3': 76, 'H4': 0}
+INFO [76] n050w4 | 3.48s | rounds=500 | P: 49770 -> 29765 (Δ=+20005) | hard={'H1': 0, 'H2': 0, 'H3': 26, 'H4': 0}
+INFO [77] n040w4 | 2.81s | rounds=500 | P: 48490 -> 27945 (Δ=+20545) | hard={'H1': 0, 'H2': 0, 'H3': 21, 'H4': 0}
+INFO [78] n030w8 | 3.77s | rounds=500 | P: 57005 -> 36305 (Δ=+20700) | hard={'H1': 0, 'H2': 0, 'H3': 14, 'H4': 0}
+INFO [79] n100w4 | 6.39s | rounds=500 | P: 95560 -> 71935 (Δ=+23625) | hard={'H1': 0, 'H2': 0, 'H3': 38, 'H4': 0}
+INFO [80] n030w4 | 1.81s | rounds=500 | P: 27640 -> 15595 (Δ=+12045) | hard={'H1': 0, 'H2': 0, 'H3': 6, 'H4': 0}
+INFO [80] mean_scaled_reward(last≤2000)=0.7692  top5_arms={extend_short_rest=33683, extend_short_same_shift_streak=5066, fix_incomplete_weekend=530, extend_short_work_streak=191, break_long_rest_boundary=164}
+INFO [81] n040w4 | 2.79s | rounds=500 | P: 48625 -> 27890 (Δ=+20735) | hard={'H1': 0, 'H2': 2, 'H3': 17, 'H4': 0}
+INFO [82] n040w8 | 5.54s | rounds=500 | P: 94550 -> 61320 (Δ=+33230) | hard={'H1': 0, 'H2': 0, 'H3': 28, 'H4': 0}
+INFO [83] n080w8 | 10.68s | rounds=500 | P: 200985 -> 157400 (Δ=+43585) | hard={'H1': 0, 'H2': 0, 'H3': 79, 'H4': 0}
+INFO [84] n100w4 | 6.46s | rounds=500 | P: 101805 -> 74870 (Δ=+26935) | hard={'H1': 0, 'H2': 0, 'H3': 33, 'H4': 0}
+INFO [85] n040w4 | 2.75s | rounds=500 | P: 45930 -> 25625 (Δ=+20305) | hard={'H1': 0, 'H2': 0, 'H3': 19, 'H4': 0}
+INFO [86] n030w4 | 1.85s | rounds=500 | P: 27630 -> 15870 (Δ=+11760) | hard={'H1': 0, 'H2': 1, 'H3': 18, 'H4': 0}
+INFO [87] n120w8 | 16.36s | rounds=500 | P: 282545 -> 223775 (Δ=+58770) | hard={'H1': 0, 'H2': 0, 'H3': 188, 'H4': 0}
+INFO [88] n060w4 | 4.20s | rounds=500 | P: 95170 -> 64030 (Δ=+31140) | hard={'H1': 0, 'H2': 0, 'H3': 34, 'H4': 0}
+INFO [89] n060w8 | 8.10s | rounds=500 | P: 129635 -> 89255 (Δ=+40380) | hard={'H1': 0, 'H2': 0, 'H3': 67, 'H4': 0}
+INFO [90] n060w4 | 4.17s | rounds=500 | P: 97875 -> 65370 (Δ=+32505) | hard={'H1': 0, 'H2': 0, 'H3': 38, 'H4': 0}
+INFO [90] mean_scaled_reward(last≤2000)=1.6279  top5_arms={extend_short_rest=38191, extend_short_same_shift_streak=5517, fix_incomplete_weekend=552, extend_short_work_streak=196, break_long_work_streak_end=173}
+INFO [91] n050w4 | 3.42s | rounds=500 | P: 52645 -> 30050 (Δ=+22595) | hard={'H1': 0, 'H2': 1, 'H3': 28, 'H4': 0}
+INFO [92] n060w4 | 4.16s | rounds=500 | P: 93335 -> 64515 (Δ=+28820) | hard={'H1': 0, 'H2': 0, 'H3': 41, 'H4': 0}
+INFO [93] n060w8 | 8.10s | rounds=500 | P: 126605 -> 86765 (Δ=+39840) | hard={'H1': 0, 'H2': 0, 'H3': 59, 'H4': 0}
+INFO [94] n030w8 | 3.80s | rounds=500 | P: 56095 -> 35295 (Δ=+20800) | hard={'H1': 0, 'H2': 2, 'H3': 29, 'H4': 0}
+INFO [95] n120w4 | 8.15s | rounds=500 | P: 144260 -> 99625 (Δ=+44635) | hard={'H1': 0, 'H2': 0, 'H3': 68, 'H4': 0}
+INFO [96] n040w8 | 5.58s | rounds=500 | P: 95490 -> 64965 (Δ=+30525) | hard={'H1': 0, 'H2': 0, 'H3': 39, 'H4': 0}
+INFO [97] n120w4 | 8.24s | rounds=500 | P: 139310 -> 95605 (Δ=+43705) | hard={'H1': 0, 'H2': 0, 'H3': 70, 'H4': 0}
+INFO [98] n120w8 | 16.32s | rounds=500 | P: 280315 -> 219815 (Δ=+60500) | hard={'H1': 0, 'H2': 0, 'H3': 157, 'H4': 0}
+INFO [99] n120w4 | 8.85s | rounds=500 | P: 141760 -> 95720 (Δ=+46040) | hard={'H1': 0, 'H2': 0, 'H3': 77, 'H4': 0}
+INFO [100] n050w4 | 3.36s | rounds=500 | P: 46770 -> 28260 (Δ=+18510) | hard={'H1': 0, 'H2': 2, 'H3': 30, 'H4': 0}
+INFO [100] mean_scaled_reward(last≤2000)=1.6875  top5_arms={extend_short_rest=42808, extend_short_same_shift_streak=5899, fix_incomplete_weekend=552, extend_short_work_streak=196, break_long_work_streak_end=173}
+INFO Saved checkpoint to experiments/_shared/checkpoints/base_repair.npz (690.6s, 100 instances, 50000 rounds)

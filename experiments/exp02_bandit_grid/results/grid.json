@@ -1,0 +1,4543 @@
+{
+  "config": {
+    "eval_split": "dev",
+    "n_eval": 8,
+    "out_dir": "/Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp02_bandit_grid/results",
+    "repair_checkpoint": "/Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/_shared/checkpoints/base_repair.npz",
+    "rounds": 500,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "week_checkpoint": "/Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/_shared/checkpoints/base_week.npz"
+  },
+  "grid": [
+    {
+      "n_eval": 8,
+      "repair_bandit": "linucb",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5015,
+          "final_penalty": 11165,
+          "post_week_penalty": 16180,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5890,
+          "final_penalty": 15730,
+          "post_week_penalty": 21620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7850,
+          "final_penalty": 11955,
+          "post_week_penalty": 19805,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1650,
+          "final_penalty": 3020,
+          "post_week_penalty": 4670,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1860,
+          "final_penalty": 3910,
+          "post_week_penalty": 5770,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1500,
+          "final_penalty": 3180,
+          "post_week_penalty": 4680,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5860,
+          "final_penalty": 11460,
+          "post_week_penalty": 17320,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4810,
+          "final_penalty": 16460,
+          "post_week_penalty": 21270,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4520,
+          "final_penalty": 11660,
+          "post_week_penalty": 16180,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6075,
+          "final_penalty": 15545,
+          "post_week_penalty": 21620,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7560,
+          "final_penalty": 12245,
+          "post_week_penalty": 19805,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1095,
+          "final_penalty": 3575,
+          "post_week_penalty": 4670,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1850,
+          "final_penalty": 3920,
+          "post_week_penalty": 5770,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1270,
+          "final_penalty": 3410,
+          "post_week_penalty": 4680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5845,
+          "final_penalty": 11475,
+          "post_week_penalty": 17320,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5100,
+          "final_penalty": 16170,
+          "post_week_penalty": 21270,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5370,
+          "final_penalty": 10810,
+          "post_week_penalty": 16180,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6565,
+          "final_penalty": 15055,
+          "post_week_penalty": 21620,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8570,
+          "final_penalty": 11235,
+          "post_week_penalty": 19805,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1085,
+          "final_penalty": 3585,
+          "post_week_penalty": 4670,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1705,
+          "final_penalty": 4065,
+          "post_week_penalty": 5770,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 945,
+          "final_penalty": 3735,
+          "post_week_penalty": 4680,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5875,
+          "final_penalty": 11445,
+          "post_week_penalty": 17320,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4580,
+          "final_penalty": 16690,
+          "post_week_penalty": 21270,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "linucb"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "uniform",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 830,
+          "final_penalty": 15350,
+          "post_week_penalty": 16180,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2660,
+          "final_penalty": 18960,
+          "post_week_penalty": 21620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5860,
+          "final_penalty": 13945,
+          "post_week_penalty": 19805,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 600,
+          "final_penalty": 4070,
+          "post_week_penalty": 4670,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1765,
+          "final_penalty": 4005,
+          "post_week_penalty": 5770,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 700,
+          "final_penalty": 3980,
+          "post_week_penalty": 4680,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2310,
+          "final_penalty": 15010,
+          "post_week_penalty": 17320,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5400,
+          "final_penalty": 15870,
+          "post_week_penalty": 21270,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 70,
+          "final_penalty": 16110,
+          "post_week_penalty": 16180,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3535,
+          "final_penalty": 18085,
+          "post_week_penalty": 21620,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5325,
+          "final_penalty": 14480,
+          "post_week_penalty": 19805,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1070,
+          "final_penalty": 3600,
+          "post_week_penalty": 4670,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1675,
+          "final_penalty": 4095,
+          "post_week_penalty": 5770,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 945,
+          "final_penalty": 3735,
+          "post_week_penalty": 4680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3355,
+          "final_penalty": 13965,
+          "post_week_penalty": 17320,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2510,
+          "final_penalty": 18760,
+          "post_week_penalty": 21270,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 1700,
+          "final_penalty": 14480,
+          "post_week_penalty": 16180,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2210,
+          "final_penalty": 19410,
+          "post_week_penalty": 21620,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6630,
+          "final_penalty": 13175,
+          "post_week_penalty": 19805,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1615,
+          "final_penalty": 3055,
+          "post_week_penalty": 4670,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2205,
+          "final_penalty": 3565,
+          "post_week_penalty": 5770,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 630,
+          "final_penalty": 4050,
+          "post_week_penalty": 4680,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3250,
+          "final_penalty": 14070,
+          "post_week_penalty": 17320,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3030,
+          "final_penalty": 18240,
+          "post_week_penalty": 21270,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "linucb"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "ucb1",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2170,
+          "final_penalty": 14010,
+          "post_week_penalty": 16180,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5705,
+          "final_penalty": 15915,
+          "post_week_penalty": 21620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8615,
+          "final_penalty": 11190,
+          "post_week_penalty": 19805,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 370,
+          "final_penalty": 4300,
+          "post_week_penalty": 4670,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1540,
+          "final_penalty": 4230,
+          "post_week_penalty": 5770,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1205,
+          "final_penalty": 3475,
+          "post_week_penalty": 4680,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5465,
+          "final_penalty": 11855,
+          "post_week_penalty": 17320,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5920,
+          "final_penalty": 15350,
+          "post_week_penalty": 21270,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3790,
+          "final_penalty": 12390,
+          "post_week_penalty": 16180,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3100,
+          "final_penalty": 18520,
+          "post_week_penalty": 21620,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5160,
+          "final_penalty": 14645,
+          "post_week_penalty": 19805,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 735,
+          "final_penalty": 3935,
+          "post_week_penalty": 4670,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 760,
+          "final_penalty": 5010,
+          "post_week_penalty": 5770,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 895,
+          "final_penalty": 3785,
+          "post_week_penalty": 4680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5785,
+          "final_penalty": 11535,
+          "post_week_penalty": 17320,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 1985,
+          "final_penalty": 19285,
+          "post_week_penalty": 21270,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3250,
+          "final_penalty": 12930,
+          "post_week_penalty": 16180,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4340,
+          "final_penalty": 17280,
+          "post_week_penalty": 21620,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8575,
+          "final_penalty": 11230,
+          "post_week_penalty": 19805,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1520,
+          "final_penalty": 3150,
+          "post_week_penalty": 4670,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1245,
+          "final_penalty": 4525,
+          "post_week_penalty": 5770,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 790,
+          "final_penalty": 3890,
+          "post_week_penalty": 4680,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3825,
+          "final_penalty": 13495,
+          "post_week_penalty": 17320,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4725,
+          "final_penalty": 16545,
+          "post_week_penalty": 21270,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "linucb"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "epsilon_greedy",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2860,
+          "final_penalty": 13320,
+          "post_week_penalty": 16180,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5965,
+          "final_penalty": 15655,
+          "post_week_penalty": 21620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8475,
+          "final_penalty": 11330,
+          "post_week_penalty": 19805,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1345,
+          "final_penalty": 3325,
+          "post_week_penalty": 4670,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1630,
+          "final_penalty": 4140,
+          "post_week_penalty": 5770,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 860,
+          "final_penalty": 3820,
+          "post_week_penalty": 4680,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5765,
+          "final_penalty": 11555,
+          "post_week_penalty": 17320,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2515,
+          "final_penalty": 18755,
+          "post_week_penalty": 21270,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3010,
+          "final_penalty": 13170,
+          "post_week_penalty": 16180,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4390,
+          "final_penalty": 17230,
+          "post_week_penalty": 21620,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6675,
+          "final_penalty": 13130,
+          "post_week_penalty": 19805,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 940,
+          "final_penalty": 3730,
+          "post_week_penalty": 4670,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1760,
+          "final_penalty": 4010,
+          "post_week_penalty": 5770,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 540,
+          "final_penalty": 4140,
+          "post_week_penalty": 4680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3450,
+          "final_penalty": 13870,
+          "post_week_penalty": 17320,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4305,
+          "final_penalty": 16965,
+          "post_week_penalty": 21270,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3225,
+          "final_penalty": 12955,
+          "post_week_penalty": 16180,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 1190,
+          "final_penalty": 20430,
+          "post_week_penalty": 21620,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7980,
+          "final_penalty": 11825,
+          "post_week_penalty": 19805,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 900,
+          "final_penalty": 3770,
+          "post_week_penalty": 4670,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1170,
+          "final_penalty": 4600,
+          "post_week_penalty": 5770,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 990,
+          "final_penalty": 3690,
+          "post_week_penalty": 4680,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5565,
+          "final_penalty": 11755,
+          "post_week_penalty": 17320,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4720,
+          "final_penalty": 16550,
+          "post_week_penalty": 21270,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "linucb"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "thompson",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3160,
+          "final_penalty": 13020,
+          "post_week_penalty": 16180,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3645,
+          "final_penalty": 17975,
+          "post_week_penalty": 21620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6355,
+          "final_penalty": 13450,
+          "post_week_penalty": 19805,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 995,
+          "final_penalty": 3675,
+          "post_week_penalty": 4670,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1975,
+          "final_penalty": 3795,
+          "post_week_penalty": 5770,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 935,
+          "final_penalty": 3745,
+          "post_week_penalty": 4680,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3730,
+          "final_penalty": 13590,
+          "post_week_penalty": 17320,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4700,
+          "final_penalty": 16570,
+          "post_week_penalty": 21270,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2615,
+          "final_penalty": 13565,
+          "post_week_penalty": 16180,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2510,
+          "final_penalty": 19110,
+          "post_week_penalty": 21620,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5175,
+          "final_penalty": 14630,
+          "post_week_penalty": 19805,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1100,
+          "final_penalty": 3570,
+          "post_week_penalty": 4670,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1985,
+          "final_penalty": 3785,
+          "post_week_penalty": 5770,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 700,
+          "final_penalty": 3980,
+          "post_week_penalty": 4680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3050,
+          "final_penalty": 14270,
+          "post_week_penalty": 17320,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3780,
+          "final_penalty": 17490,
+          "post_week_penalty": 21270,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4310,
+          "final_penalty": 11870,
+          "post_week_penalty": 16180,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2470,
+          "final_penalty": 19150,
+          "post_week_penalty": 21620,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7160,
+          "final_penalty": 12645,
+          "post_week_penalty": 19805,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 365,
+          "final_penalty": 4305,
+          "post_week_penalty": 4670,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1145,
+          "final_penalty": 4625,
+          "post_week_penalty": 5770,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1460,
+          "final_penalty": 3220,
+          "post_week_penalty": 4680,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3360,
+          "final_penalty": 13960,
+          "post_week_penalty": 17320,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2000,
+          "final_penalty": 19270,
+          "post_week_penalty": 21270,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "linucb"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "linucb",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7090,
+          "final_penalty": 12570,
+          "post_week_penalty": 19660,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4730,
+          "final_penalty": 14270,
+          "post_week_penalty": 19000,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6480,
+          "final_penalty": 11980,
+          "post_week_penalty": 18460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1865,
+          "final_penalty": 3300,
+          "post_week_penalty": 5165,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1980,
+          "final_penalty": 3625,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1105,
+          "final_penalty": 3590,
+          "post_week_penalty": 4695,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6140,
+          "final_penalty": 12345,
+          "post_week_penalty": 18485,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5545,
+          "final_penalty": 13595,
+          "post_week_penalty": 19140,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11750,
+          "final_penalty": 9200,
+          "post_week_penalty": 20950,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5110,
+          "final_penalty": 15480,
+          "post_week_penalty": 20590,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10070,
+          "final_penalty": 11435,
+          "post_week_penalty": 21505,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2880,
+          "final_penalty": 3145,
+          "post_week_penalty": 6025,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1890,
+          "final_penalty": 3575,
+          "post_week_penalty": 5465,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1715,
+          "final_penalty": 3255,
+          "post_week_penalty": 4970,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10725,
+          "final_penalty": 10495,
+          "post_week_penalty": 21220,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4425,
+          "final_penalty": 16760,
+          "post_week_penalty": 21185,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10935,
+          "final_penalty": 11740,
+          "post_week_penalty": 22675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7920,
+          "final_penalty": 15255,
+          "post_week_penalty": 23175,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10080,
+          "final_penalty": 12625,
+          "post_week_penalty": 22705,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2670,
+          "final_penalty": 3105,
+          "post_week_penalty": 5775,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1610,
+          "final_penalty": 3955,
+          "post_week_penalty": 5565,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1960,
+          "final_penalty": 3455,
+          "post_week_penalty": 5415,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11060,
+          "final_penalty": 11020,
+          "post_week_penalty": 22080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9030,
+          "final_penalty": 15570,
+          "post_week_penalty": 24600,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "uniform"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "uniform",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3185,
+          "final_penalty": 16475,
+          "post_week_penalty": 19660,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2545,
+          "final_penalty": 16455,
+          "post_week_penalty": 19000,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2640,
+          "final_penalty": 15820,
+          "post_week_penalty": 18460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1480,
+          "final_penalty": 3685,
+          "post_week_penalty": 5165,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1785,
+          "final_penalty": 3820,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 660,
+          "final_penalty": 4035,
+          "post_week_penalty": 4695,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3090,
+          "final_penalty": 15395,
+          "post_week_penalty": 18485,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2125,
+          "final_penalty": 17015,
+          "post_week_penalty": 19140,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5005,
+          "final_penalty": 15945,
+          "post_week_penalty": 20950,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 1670,
+          "final_penalty": 18920,
+          "post_week_penalty": 20590,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4940,
+          "final_penalty": 16565,
+          "post_week_penalty": 21505,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1955,
+          "final_penalty": 4070,
+          "post_week_penalty": 6025,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1490,
+          "final_penalty": 3975,
+          "post_week_penalty": 5465,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1245,
+          "final_penalty": 3725,
+          "post_week_penalty": 4970,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6540,
+          "final_penalty": 14680,
+          "post_week_penalty": 21220,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4660,
+          "final_penalty": 16525,
+          "post_week_penalty": 21185,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9380,
+          "final_penalty": 13295,
+          "post_week_penalty": 22675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6460,
+          "final_penalty": 16715,
+          "post_week_penalty": 23175,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8375,
+          "final_penalty": 14330,
+          "post_week_penalty": 22705,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1960,
+          "final_penalty": 3815,
+          "post_week_penalty": 5775,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1680,
+          "final_penalty": 3885,
+          "post_week_penalty": 5565,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1475,
+          "final_penalty": 3940,
+          "post_week_penalty": 5415,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7325,
+          "final_penalty": 14755,
+          "post_week_penalty": 22080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6830,
+          "final_penalty": 17770,
+          "post_week_penalty": 24600,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "uniform"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "ucb1",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7540,
+          "final_penalty": 12120,
+          "post_week_penalty": 19660,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2135,
+          "final_penalty": 16865,
+          "post_week_penalty": 19000,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7915,
+          "final_penalty": 10545,
+          "post_week_penalty": 18460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1290,
+          "final_penalty": 3875,
+          "post_week_penalty": 5165,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 785,
+          "final_penalty": 4820,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 820,
+          "final_penalty": 3875,
+          "post_week_penalty": 4695,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5455,
+          "final_penalty": 13030,
+          "post_week_penalty": 18485,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 1825,
+          "final_penalty": 17315,
+          "post_week_penalty": 19140,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4850,
+          "final_penalty": 16100,
+          "post_week_penalty": 20950,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3455,
+          "final_penalty": 17135,
+          "post_week_penalty": 20590,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10310,
+          "final_penalty": 11195,
+          "post_week_penalty": 21505,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2075,
+          "final_penalty": 3950,
+          "post_week_penalty": 6025,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 640,
+          "final_penalty": 4825,
+          "post_week_penalty": 5465,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1305,
+          "final_penalty": 3665,
+          "post_week_penalty": 4970,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10705,
+          "final_penalty": 10515,
+          "post_week_penalty": 21220,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4560,
+          "final_penalty": 16625,
+          "post_week_penalty": 21185,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10445,
+          "final_penalty": 12230,
+          "post_week_penalty": 22675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6335,
+          "final_penalty": 16840,
+          "post_week_penalty": 23175,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8690,
+          "final_penalty": 14015,
+          "post_week_penalty": 22705,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1915,
+          "final_penalty": 3860,
+          "post_week_penalty": 5775,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1035,
+          "final_penalty": 4530,
+          "post_week_penalty": 5565,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2200,
+          "final_penalty": 3215,
+          "post_week_penalty": 5415,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11595,
+          "final_penalty": 10485,
+          "post_week_penalty": 22080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7535,
+          "final_penalty": 17065,
+          "post_week_penalty": 24600,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "uniform"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "epsilon_greedy",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6365,
+          "final_penalty": 13295,
+          "post_week_penalty": 19660,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3495,
+          "final_penalty": 15505,
+          "post_week_penalty": 19000,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6745,
+          "final_penalty": 11715,
+          "post_week_penalty": 18460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1575,
+          "final_penalty": 3590,
+          "post_week_penalty": 5165,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2175,
+          "final_penalty": 3430,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1110,
+          "final_penalty": 3585,
+          "post_week_penalty": 4695,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4320,
+          "final_penalty": 14165,
+          "post_week_penalty": 18485,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4565,
+          "final_penalty": 14575,
+          "post_week_penalty": 19140,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8535,
+          "final_penalty": 12415,
+          "post_week_penalty": 20950,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5530,
+          "final_penalty": 15060,
+          "post_week_penalty": 20590,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7005,
+          "final_penalty": 14500,
+          "post_week_penalty": 21505,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 3010,
+          "final_penalty": 3015,
+          "post_week_penalty": 6025,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1485,
+          "final_penalty": 3980,
+          "post_week_penalty": 5465,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1505,
+          "final_penalty": 3465,
+          "post_week_penalty": 4970,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6560,
+          "final_penalty": 14660,
+          "post_week_penalty": 21220,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3505,
+          "final_penalty": 17680,
+          "post_week_penalty": 21185,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10700,
+          "final_penalty": 11975,
+          "post_week_penalty": 22675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5630,
+          "final_penalty": 17545,
+          "post_week_penalty": 23175,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11300,
+          "final_penalty": 11405,
+          "post_week_penalty": 22705,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2330,
+          "final_penalty": 3445,
+          "post_week_penalty": 5775,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1065,
+          "final_penalty": 4500,
+          "post_week_penalty": 5565,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1350,
+          "final_penalty": 4065,
+          "post_week_penalty": 5415,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10140,
+          "final_penalty": 11940,
+          "post_week_penalty": 22080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9355,
+          "final_penalty": 15245,
+          "post_week_penalty": 24600,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "uniform"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "thompson",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6870,
+          "final_penalty": 12790,
+          "post_week_penalty": 19660,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4205,
+          "final_penalty": 14795,
+          "post_week_penalty": 19000,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4820,
+          "final_penalty": 13640,
+          "post_week_penalty": 18460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1490,
+          "final_penalty": 3675,
+          "post_week_penalty": 5165,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1620,
+          "final_penalty": 3985,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1090,
+          "final_penalty": 3605,
+          "post_week_penalty": 4695,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4570,
+          "final_penalty": 13915,
+          "post_week_penalty": 18485,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3045,
+          "final_penalty": 16095,
+          "post_week_penalty": 19140,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5960,
+          "final_penalty": 14990,
+          "post_week_penalty": 20950,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4625,
+          "final_penalty": 15965,
+          "post_week_penalty": 20590,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7810,
+          "final_penalty": 13695,
+          "post_week_penalty": 21505,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2285,
+          "final_penalty": 3740,
+          "post_week_penalty": 6025,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2060,
+          "final_penalty": 3405,
+          "post_week_penalty": 5465,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1705,
+          "final_penalty": 3265,
+          "post_week_penalty": 4970,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8140,
+          "final_penalty": 13080,
+          "post_week_penalty": 21220,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3530,
+          "final_penalty": 17655,
+          "post_week_penalty": 21185,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9070,
+          "final_penalty": 13605,
+          "post_week_penalty": 22675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6190,
+          "final_penalty": 16985,
+          "post_week_penalty": 23175,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10190,
+          "final_penalty": 12515,
+          "post_week_penalty": 22705,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1880,
+          "final_penalty": 3895,
+          "post_week_penalty": 5775,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1415,
+          "final_penalty": 4150,
+          "post_week_penalty": 5565,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1330,
+          "final_penalty": 4085,
+          "post_week_penalty": 5415,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10560,
+          "final_penalty": 11520,
+          "post_week_penalty": 22080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7090,
+          "final_penalty": 17510,
+          "post_week_penalty": 24600,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "uniform"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "linucb",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8060,
+          "final_penalty": 12170,
+          "post_week_penalty": 20230,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6935,
+          "final_penalty": 14170,
+          "post_week_penalty": 21105,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9680,
+          "final_penalty": 11215,
+          "post_week_penalty": 20895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2145,
+          "final_penalty": 3460,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2080,
+          "final_penalty": 3620,
+          "post_week_penalty": 5700,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1865,
+          "final_penalty": 3585,
+          "post_week_penalty": 5450,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9930,
+          "final_penalty": 10100,
+          "post_week_penalty": 20030,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8025,
+          "final_penalty": 15815,
+          "post_week_penalty": 23840,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9305,
+          "final_penalty": 10610,
+          "post_week_penalty": 19915,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5510,
+          "final_penalty": 12865,
+          "post_week_penalty": 18375,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7380,
+          "final_penalty": 11650,
+          "post_week_penalty": 19030,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1750,
+          "final_penalty": 3820,
+          "post_week_penalty": 5570,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1595,
+          "final_penalty": 3400,
+          "post_week_penalty": 4995,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1645,
+          "final_penalty": 3330,
+          "post_week_penalty": 4975,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8610,
+          "final_penalty": 10225,
+          "post_week_penalty": 18835,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4565,
+          "final_penalty": 16255,
+          "post_week_penalty": 20820,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8760,
+          "final_penalty": 10725,
+          "post_week_penalty": 19485,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5905,
+          "final_penalty": 14580,
+          "post_week_penalty": 20485,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9645,
+          "final_penalty": 10300,
+          "post_week_penalty": 19945,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2060,
+          "final_penalty": 3880,
+          "post_week_penalty": 5940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2290,
+          "final_penalty": 3535,
+          "post_week_penalty": 5825,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1530,
+          "final_penalty": 3465,
+          "post_week_penalty": 4995,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8880,
+          "final_penalty": 10430,
+          "post_week_penalty": 19310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7005,
+          "final_penalty": 13445,
+          "post_week_penalty": 20450,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "ucb1"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "uniform",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4515,
+          "final_penalty": 15715,
+          "post_week_penalty": 20230,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2175,
+          "final_penalty": 18930,
+          "post_week_penalty": 21105,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5505,
+          "final_penalty": 15390,
+          "post_week_penalty": 20895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1570,
+          "final_penalty": 4035,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1595,
+          "final_penalty": 4105,
+          "post_week_penalty": 5700,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1925,
+          "final_penalty": 3525,
+          "post_week_penalty": 5450,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5330,
+          "final_penalty": 14700,
+          "post_week_penalty": 20030,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3820,
+          "final_penalty": 20020,
+          "post_week_penalty": 23840,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2905,
+          "final_penalty": 17010,
+          "post_week_penalty": 19915,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 405,
+          "final_penalty": 17970,
+          "post_week_penalty": 18375,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4105,
+          "final_penalty": 14925,
+          "post_week_penalty": 19030,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2065,
+          "final_penalty": 3505,
+          "post_week_penalty": 5570,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 375,
+          "final_penalty": 4620,
+          "post_week_penalty": 4995,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1215,
+          "final_penalty": 3760,
+          "post_week_penalty": 4975,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3620,
+          "final_penalty": 15215,
+          "post_week_penalty": 18835,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2690,
+          "final_penalty": 18130,
+          "post_week_penalty": 20820,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3280,
+          "final_penalty": 16205,
+          "post_week_penalty": 19485,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2140,
+          "final_penalty": 18345,
+          "post_week_penalty": 20485,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5820,
+          "final_penalty": 14125,
+          "post_week_penalty": 19945,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1185,
+          "final_penalty": 4755,
+          "post_week_penalty": 5940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1920,
+          "final_penalty": 3905,
+          "post_week_penalty": 5825,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 875,
+          "final_penalty": 4120,
+          "post_week_penalty": 4995,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3770,
+          "final_penalty": 15540,
+          "post_week_penalty": 19310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 1370,
+          "final_penalty": 19080,
+          "post_week_penalty": 20450,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "ucb1"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "ucb1",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6235,
+          "final_penalty": 13995,
+          "post_week_penalty": 20230,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3325,
+          "final_penalty": 17780,
+          "post_week_penalty": 21105,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8600,
+          "final_penalty": 12295,
+          "post_week_penalty": 20895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2440,
+          "final_penalty": 3165,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1225,
+          "final_penalty": 4475,
+          "post_week_penalty": 5700,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1475,
+          "final_penalty": 3975,
+          "post_week_penalty": 5450,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4565,
+          "final_penalty": 15465,
+          "post_week_penalty": 20030,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3385,
+          "final_penalty": 20455,
+          "post_week_penalty": 23840,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8035,
+          "final_penalty": 11880,
+          "post_week_penalty": 19915,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3140,
+          "final_penalty": 15235,
+          "post_week_penalty": 18375,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4210,
+          "final_penalty": 14820,
+          "post_week_penalty": 19030,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1805,
+          "final_penalty": 3765,
+          "post_week_penalty": 5570,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1240,
+          "final_penalty": 3755,
+          "post_week_penalty": 4995,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 505,
+          "final_penalty": 4470,
+          "post_week_penalty": 4975,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6550,
+          "final_penalty": 12285,
+          "post_week_penalty": 18835,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3035,
+          "final_penalty": 17785,
+          "post_week_penalty": 20820,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3620,
+          "final_penalty": 15865,
+          "post_week_penalty": 19485,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3990,
+          "final_penalty": 16495,
+          "post_week_penalty": 20485,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7750,
+          "final_penalty": 12195,
+          "post_week_penalty": 19945,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2545,
+          "final_penalty": 3395,
+          "post_week_penalty": 5940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2875,
+          "final_penalty": 2950,
+          "post_week_penalty": 5825,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 950,
+          "final_penalty": 4045,
+          "post_week_penalty": 4995,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7100,
+          "final_penalty": 12210,
+          "post_week_penalty": 19310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4615,
+          "final_penalty": 15835,
+          "post_week_penalty": 20450,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "ucb1"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "epsilon_greedy",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7860,
+          "final_penalty": 12370,
+          "post_week_penalty": 20230,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4025,
+          "final_penalty": 17080,
+          "post_week_penalty": 21105,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7930,
+          "final_penalty": 12965,
+          "post_week_penalty": 20895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1995,
+          "final_penalty": 3610,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2210,
+          "final_penalty": 3490,
+          "post_week_penalty": 5700,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1565,
+          "final_penalty": 3885,
+          "post_week_penalty": 5450,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7745,
+          "final_penalty": 12285,
+          "post_week_penalty": 20030,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6505,
+          "final_penalty": 17335,
+          "post_week_penalty": 23840,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7970,
+          "final_penalty": 11945,
+          "post_week_penalty": 19915,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2225,
+          "final_penalty": 16150,
+          "post_week_penalty": 18375,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4755,
+          "final_penalty": 14275,
+          "post_week_penalty": 19030,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2185,
+          "final_penalty": 3385,
+          "post_week_penalty": 5570,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1290,
+          "final_penalty": 3705,
+          "post_week_penalty": 4995,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1765,
+          "final_penalty": 3210,
+          "post_week_penalty": 4975,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7930,
+          "final_penalty": 10905,
+          "post_week_penalty": 18835,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3555,
+          "final_penalty": 17265,
+          "post_week_penalty": 20820,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6645,
+          "final_penalty": 12840,
+          "post_week_penalty": 19485,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5400,
+          "final_penalty": 15085,
+          "post_week_penalty": 20485,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7800,
+          "final_penalty": 12145,
+          "post_week_penalty": 19945,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2535,
+          "final_penalty": 3405,
+          "post_week_penalty": 5940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1860,
+          "final_penalty": 3965,
+          "post_week_penalty": 5825,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1805,
+          "final_penalty": 3190,
+          "post_week_penalty": 4995,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5590,
+          "final_penalty": 13720,
+          "post_week_penalty": 19310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2390,
+          "final_penalty": 18060,
+          "post_week_penalty": 20450,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "ucb1"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "thompson",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6680,
+          "final_penalty": 13550,
+          "post_week_penalty": 20230,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5780,
+          "final_penalty": 15325,
+          "post_week_penalty": 21105,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7880,
+          "final_penalty": 13015,
+          "post_week_penalty": 20895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1670,
+          "final_penalty": 3935,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1790,
+          "final_penalty": 3910,
+          "post_week_penalty": 5700,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1865,
+          "final_penalty": 3585,
+          "post_week_penalty": 5450,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5720,
+          "final_penalty": 14310,
+          "post_week_penalty": 20030,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6470,
+          "final_penalty": 17370,
+          "post_week_penalty": 23840,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5995,
+          "final_penalty": 13920,
+          "post_week_penalty": 19915,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2420,
+          "final_penalty": 15955,
+          "post_week_penalty": 18375,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3035,
+          "final_penalty": 15995,
+          "post_week_penalty": 19030,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2045,
+          "final_penalty": 3525,
+          "post_week_penalty": 5570,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1330,
+          "final_penalty": 3665,
+          "post_week_penalty": 4995,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1320,
+          "final_penalty": 3655,
+          "post_week_penalty": 4975,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5790,
+          "final_penalty": 13045,
+          "post_week_penalty": 18835,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2465,
+          "final_penalty": 18355,
+          "post_week_penalty": 20820,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5690,
+          "final_penalty": 13795,
+          "post_week_penalty": 19485,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2930,
+          "final_penalty": 17555,
+          "post_week_penalty": 20485,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7235,
+          "final_penalty": 12710,
+          "post_week_penalty": 19945,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2055,
+          "final_penalty": 3885,
+          "post_week_penalty": 5940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2675,
+          "final_penalty": 3150,
+          "post_week_penalty": 5825,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1160,
+          "final_penalty": 3835,
+          "post_week_penalty": 4995,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5185,
+          "final_penalty": 14125,
+          "post_week_penalty": 19310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3790,
+          "final_penalty": 16660,
+          "post_week_penalty": 20450,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "ucb1"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "linucb",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7270,
+          "final_penalty": 12570,
+          "post_week_penalty": 19840,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6505,
+          "final_penalty": 14140,
+          "post_week_penalty": 20645,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8475,
+          "final_penalty": 9485,
+          "post_week_penalty": 17960,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2050,
+          "final_penalty": 3515,
+          "post_week_penalty": 5565,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2565,
+          "final_penalty": 3080,
+          "post_week_penalty": 5645,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1680,
+          "final_penalty": 3405,
+          "post_week_penalty": 5085,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8075,
+          "final_penalty": 11215,
+          "post_week_penalty": 19290,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5255,
+          "final_penalty": 14460,
+          "post_week_penalty": 19715,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7500,
+          "final_penalty": 12015,
+          "post_week_penalty": 19515,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7265,
+          "final_penalty": 17220,
+          "post_week_penalty": 24485,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8715,
+          "final_penalty": 11225,
+          "post_week_penalty": 19940,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2205,
+          "final_penalty": 3860,
+          "post_week_penalty": 6065,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1575,
+          "final_penalty": 4035,
+          "post_week_penalty": 5610,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1750,
+          "final_penalty": 3515,
+          "post_week_penalty": 5265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8590,
+          "final_penalty": 11295,
+          "post_week_penalty": 19885,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5890,
+          "final_penalty": 15305,
+          "post_week_penalty": 21195,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7355,
+          "final_penalty": 12160,
+          "post_week_penalty": 19515,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7555,
+          "final_penalty": 15920,
+          "post_week_penalty": 23475,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8490,
+          "final_penalty": 11450,
+          "post_week_penalty": 19940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2525,
+          "final_penalty": 3540,
+          "post_week_penalty": 6065,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1795,
+          "final_penalty": 3815,
+          "post_week_penalty": 5610,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1720,
+          "final_penalty": 3545,
+          "post_week_penalty": 5265,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8595,
+          "final_penalty": 11290,
+          "post_week_penalty": 19885,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6190,
+          "final_penalty": 15195,
+          "post_week_penalty": 21385,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "epsilon_greedy"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "uniform",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3440,
+          "final_penalty": 16400,
+          "post_week_penalty": 19840,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2480,
+          "final_penalty": 18165,
+          "post_week_penalty": 20645,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3720,
+          "final_penalty": 14240,
+          "post_week_penalty": 17960,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1625,
+          "final_penalty": 3940,
+          "post_week_penalty": 5565,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1975,
+          "final_penalty": 3670,
+          "post_week_penalty": 5645,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 870,
+          "final_penalty": 4215,
+          "post_week_penalty": 5085,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3200,
+          "final_penalty": 16090,
+          "post_week_penalty": 19290,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2655,
+          "final_penalty": 17060,
+          "post_week_penalty": 19715,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3805,
+          "final_penalty": 15710,
+          "post_week_penalty": 19515,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4745,
+          "final_penalty": 19740,
+          "post_week_penalty": 24485,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4735,
+          "final_penalty": 15205,
+          "post_week_penalty": 19940,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2275,
+          "final_penalty": 3790,
+          "post_week_penalty": 6065,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2020,
+          "final_penalty": 3590,
+          "post_week_penalty": 5610,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1665,
+          "final_penalty": 3600,
+          "post_week_penalty": 5265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4975,
+          "final_penalty": 14910,
+          "post_week_penalty": 19885,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2655,
+          "final_penalty": 18540,
+          "post_week_penalty": 21195,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3390,
+          "final_penalty": 16125,
+          "post_week_penalty": 19515,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6560,
+          "final_penalty": 16915,
+          "post_week_penalty": 23475,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5980,
+          "final_penalty": 13960,
+          "post_week_penalty": 19940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2080,
+          "final_penalty": 3985,
+          "post_week_penalty": 6065,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1850,
+          "final_penalty": 3760,
+          "post_week_penalty": 5610,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1115,
+          "final_penalty": 4150,
+          "post_week_penalty": 5265,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3930,
+          "final_penalty": 15955,
+          "post_week_penalty": 19885,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3240,
+          "final_penalty": 18145,
+          "post_week_penalty": 21385,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "epsilon_greedy"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "ucb1",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4895,
+          "final_penalty": 14945,
+          "post_week_penalty": 19840,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3450,
+          "final_penalty": 17195,
+          "post_week_penalty": 20645,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6085,
+          "final_penalty": 11875,
+          "post_week_penalty": 17960,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1550,
+          "final_penalty": 4015,
+          "post_week_penalty": 5565,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1140,
+          "final_penalty": 4505,
+          "post_week_penalty": 5645,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 700,
+          "final_penalty": 4385,
+          "post_week_penalty": 5085,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7885,
+          "final_penalty": 11405,
+          "post_week_penalty": 19290,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4785,
+          "final_penalty": 14930,
+          "post_week_penalty": 19715,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7405,
+          "final_penalty": 12110,
+          "post_week_penalty": 19515,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8930,
+          "final_penalty": 15555,
+          "post_week_penalty": 24485,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6920,
+          "final_penalty": 13020,
+          "post_week_penalty": 19940,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2150,
+          "final_penalty": 3915,
+          "post_week_penalty": 6065,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1335,
+          "final_penalty": 4275,
+          "post_week_penalty": 5610,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1995,
+          "final_penalty": 3270,
+          "post_week_penalty": 5265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6335,
+          "final_penalty": 13550,
+          "post_week_penalty": 19885,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4440,
+          "final_penalty": 16755,
+          "post_week_penalty": 21195,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6040,
+          "final_penalty": 13475,
+          "post_week_penalty": 19515,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3260,
+          "final_penalty": 20215,
+          "post_week_penalty": 23475,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6285,
+          "final_penalty": 13655,
+          "post_week_penalty": 19940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2965,
+          "final_penalty": 3100,
+          "post_week_penalty": 6065,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1675,
+          "final_penalty": 3935,
+          "post_week_penalty": 5610,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1910,
+          "final_penalty": 3355,
+          "post_week_penalty": 5265,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8290,
+          "final_penalty": 11595,
+          "post_week_penalty": 19885,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3570,
+          "final_penalty": 17815,
+          "post_week_penalty": 21385,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "epsilon_greedy"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "epsilon_greedy",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4550,
+          "final_penalty": 15290,
+          "post_week_penalty": 19840,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2930,
+          "final_penalty": 17715,
+          "post_week_penalty": 20645,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4585,
+          "final_penalty": 13375,
+          "post_week_penalty": 17960,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1605,
+          "final_penalty": 3960,
+          "post_week_penalty": 5565,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1570,
+          "final_penalty": 4075,
+          "post_week_penalty": 5645,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 810,
+          "final_penalty": 4275,
+          "post_week_penalty": 5085,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5365,
+          "final_penalty": 13925,
+          "post_week_penalty": 19290,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2820,
+          "final_penalty": 16895,
+          "post_week_penalty": 19715,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4960,
+          "final_penalty": 14555,
+          "post_week_penalty": 19515,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7690,
+          "final_penalty": 16795,
+          "post_week_penalty": 24485,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6580,
+          "final_penalty": 13360,
+          "post_week_penalty": 19940,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 3135,
+          "final_penalty": 2930,
+          "post_week_penalty": 6065,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2060,
+          "final_penalty": 3550,
+          "post_week_penalty": 5610,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1325,
+          "final_penalty": 3940,
+          "post_week_penalty": 5265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6105,
+          "final_penalty": 13780,
+          "post_week_penalty": 19885,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3130,
+          "final_penalty": 18065,
+          "post_week_penalty": 21195,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6085,
+          "final_penalty": 13430,
+          "post_week_penalty": 19515,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3260,
+          "final_penalty": 20215,
+          "post_week_penalty": 23475,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6360,
+          "final_penalty": 13580,
+          "post_week_penalty": 19940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1945,
+          "final_penalty": 4120,
+          "post_week_penalty": 6065,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1215,
+          "final_penalty": 4395,
+          "post_week_penalty": 5610,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1650,
+          "final_penalty": 3615,
+          "post_week_penalty": 5265,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7165,
+          "final_penalty": 12720,
+          "post_week_penalty": 19885,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2015,
+          "final_penalty": 19370,
+          "post_week_penalty": 21385,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "epsilon_greedy"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "thompson",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4665,
+          "final_penalty": 15175,
+          "post_week_penalty": 19840,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4615,
+          "final_penalty": 16030,
+          "post_week_penalty": 20645,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5330,
+          "final_penalty": 12630,
+          "post_week_penalty": 17960,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2015,
+          "final_penalty": 3550,
+          "post_week_penalty": 5565,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2060,
+          "final_penalty": 3585,
+          "post_week_penalty": 5645,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1410,
+          "final_penalty": 3675,
+          "post_week_penalty": 5085,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5235,
+          "final_penalty": 14055,
+          "post_week_penalty": 19290,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3095,
+          "final_penalty": 16620,
+          "post_week_penalty": 19715,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4755,
+          "final_penalty": 14760,
+          "post_week_penalty": 19515,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8420,
+          "final_penalty": 16065,
+          "post_week_penalty": 24485,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6930,
+          "final_penalty": 13010,
+          "post_week_penalty": 19940,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2605,
+          "final_penalty": 3460,
+          "post_week_penalty": 6065,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2155,
+          "final_penalty": 3455,
+          "post_week_penalty": 5610,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1540,
+          "final_penalty": 3725,
+          "post_week_penalty": 5265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7415,
+          "final_penalty": 12470,
+          "post_week_penalty": 19885,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3245,
+          "final_penalty": 17950,
+          "post_week_penalty": 21195,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5210,
+          "final_penalty": 14305,
+          "post_week_penalty": 19515,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6575,
+          "final_penalty": 16900,
+          "post_week_penalty": 23475,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6465,
+          "final_penalty": 13475,
+          "post_week_penalty": 19940,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2880,
+          "final_penalty": 3185,
+          "post_week_penalty": 6065,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1535,
+          "final_penalty": 4075,
+          "post_week_penalty": 5610,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1745,
+          "final_penalty": 3520,
+          "post_week_penalty": 5265,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7635,
+          "final_penalty": 12250,
+          "post_week_penalty": 19885,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4860,
+          "final_penalty": 16525,
+          "post_week_penalty": 21385,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "epsilon_greedy"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "linucb",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10065,
+          "final_penalty": 13175,
+          "post_week_penalty": 23240,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9545,
+          "final_penalty": 14110,
+          "post_week_penalty": 23655,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11565,
+          "final_penalty": 11070,
+          "post_week_penalty": 22635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2675,
+          "final_penalty": 3480,
+          "post_week_penalty": 6155,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2270,
+          "final_penalty": 3685,
+          "post_week_penalty": 5955,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1760,
+          "final_penalty": 3845,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11665,
+          "final_penalty": 10285,
+          "post_week_penalty": 21950,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8565,
+          "final_penalty": 14845,
+          "post_week_penalty": 23410,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11455,
+          "final_penalty": 10265,
+          "post_week_penalty": 21720,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9545,
+          "final_penalty": 15155,
+          "post_week_penalty": 24700,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10825,
+          "final_penalty": 11015,
+          "post_week_penalty": 21840,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 3125,
+          "final_penalty": 3315,
+          "post_week_penalty": 6440,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2665,
+          "final_penalty": 3545,
+          "post_week_penalty": 6210,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1155,
+          "final_penalty": 3765,
+          "post_week_penalty": 4920,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11060,
+          "final_penalty": 10355,
+          "post_week_penalty": 21415,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 10800,
+          "final_penalty": 16160,
+          "post_week_penalty": 26960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7265,
+          "final_penalty": 12815,
+          "post_week_penalty": 20080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8090,
+          "final_penalty": 14935,
+          "post_week_penalty": 23025,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7780,
+          "final_penalty": 11800,
+          "post_week_penalty": 19580,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2060,
+          "final_penalty": 3830,
+          "post_week_penalty": 5890,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2135,
+          "final_penalty": 3030,
+          "post_week_penalty": 5165,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2235,
+          "final_penalty": 3235,
+          "post_week_penalty": 5470,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8115,
+          "final_penalty": 11985,
+          "post_week_penalty": 20100,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5945,
+          "final_penalty": 15950,
+          "post_week_penalty": 21895,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "thompson"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "uniform",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8385,
+          "final_penalty": 14855,
+          "post_week_penalty": 23240,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5480,
+          "final_penalty": 18175,
+          "post_week_penalty": 23655,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6485,
+          "final_penalty": 16150,
+          "post_week_penalty": 22635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2220,
+          "final_penalty": 3935,
+          "post_week_penalty": 6155,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1200,
+          "final_penalty": 4755,
+          "post_week_penalty": 5955,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1560,
+          "final_penalty": 4045,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8270,
+          "final_penalty": 13680,
+          "post_week_penalty": 21950,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5485,
+          "final_penalty": 17925,
+          "post_week_penalty": 23410,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5520,
+          "final_penalty": 16200,
+          "post_week_penalty": 21720,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4890,
+          "final_penalty": 19810,
+          "post_week_penalty": 24700,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5165,
+          "final_penalty": 16675,
+          "post_week_penalty": 21840,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2760,
+          "final_penalty": 3680,
+          "post_week_penalty": 6440,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2310,
+          "final_penalty": 3900,
+          "post_week_penalty": 6210,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 785,
+          "final_penalty": 4135,
+          "post_week_penalty": 4920,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4625,
+          "final_penalty": 16790,
+          "post_week_penalty": 21415,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8285,
+          "final_penalty": 18675,
+          "post_week_penalty": 26960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5100,
+          "final_penalty": 14980,
+          "post_week_penalty": 20080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 3410,
+          "final_penalty": 19615,
+          "post_week_penalty": 23025,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5080,
+          "final_penalty": 14500,
+          "post_week_penalty": 19580,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2380,
+          "final_penalty": 3510,
+          "post_week_penalty": 5890,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1630,
+          "final_penalty": 3535,
+          "post_week_penalty": 5165,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1415,
+          "final_penalty": 4055,
+          "post_week_penalty": 5470,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5845,
+          "final_penalty": 14255,
+          "post_week_penalty": 20100,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2325,
+          "final_penalty": 19570,
+          "post_week_penalty": 21895,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "thompson"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "ucb1",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8665,
+          "final_penalty": 14575,
+          "post_week_penalty": 23240,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9010,
+          "final_penalty": 14645,
+          "post_week_penalty": 23655,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7135,
+          "final_penalty": 15500,
+          "post_week_penalty": 22635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2470,
+          "final_penalty": 3685,
+          "post_week_penalty": 6155,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1185,
+          "final_penalty": 4770,
+          "post_week_penalty": 5955,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 940,
+          "final_penalty": 4665,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10880,
+          "final_penalty": 11070,
+          "post_week_penalty": 21950,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6585,
+          "final_penalty": 16825,
+          "post_week_penalty": 23410,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9805,
+          "final_penalty": 11915,
+          "post_week_penalty": 21720,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 8125,
+          "final_penalty": 16575,
+          "post_week_penalty": 24700,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7690,
+          "final_penalty": 14150,
+          "post_week_penalty": 21840,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2275,
+          "final_penalty": 4165,
+          "post_week_penalty": 6440,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1865,
+          "final_penalty": 4345,
+          "post_week_penalty": 6210,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 775,
+          "final_penalty": 4145,
+          "post_week_penalty": 4920,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 11670,
+          "final_penalty": 9745,
+          "post_week_penalty": 21415,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9020,
+          "final_penalty": 17940,
+          "post_week_penalty": 26960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8375,
+          "final_penalty": 11705,
+          "post_week_penalty": 20080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 2800,
+          "final_penalty": 20225,
+          "post_week_penalty": 23025,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3605,
+          "final_penalty": 15975,
+          "post_week_penalty": 19580,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2370,
+          "final_penalty": 3520,
+          "post_week_penalty": 5890,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1360,
+          "final_penalty": 3805,
+          "post_week_penalty": 5165,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1705,
+          "final_penalty": 3765,
+          "post_week_penalty": 5470,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6720,
+          "final_penalty": 13380,
+          "post_week_penalty": 20100,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4135,
+          "final_penalty": 17760,
+          "post_week_penalty": 21895,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "thompson"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "epsilon_greedy",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7150,
+          "final_penalty": 16090,
+          "post_week_penalty": 23240,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7540,
+          "final_penalty": 16115,
+          "post_week_penalty": 23655,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9445,
+          "final_penalty": 13190,
+          "post_week_penalty": 22635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1760,
+          "final_penalty": 4395,
+          "post_week_penalty": 6155,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1960,
+          "final_penalty": 3995,
+          "post_week_penalty": 5955,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1725,
+          "final_penalty": 3880,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10920,
+          "final_penalty": 11030,
+          "post_week_penalty": 21950,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7285,
+          "final_penalty": 16125,
+          "post_week_penalty": 23410,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8085,
+          "final_penalty": 13635,
+          "post_week_penalty": 21720,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7785,
+          "final_penalty": 16915,
+          "post_week_penalty": 24700,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7900,
+          "final_penalty": 13940,
+          "post_week_penalty": 21840,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2700,
+          "final_penalty": 3740,
+          "post_week_penalty": 6440,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2065,
+          "final_penalty": 4145,
+          "post_week_penalty": 6210,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1490,
+          "final_penalty": 3430,
+          "post_week_penalty": 4920,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 10030,
+          "final_penalty": 11385,
+          "post_week_penalty": 21415,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 9440,
+          "final_penalty": 17520,
+          "post_week_penalty": 26960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7160,
+          "final_penalty": 12920,
+          "post_week_penalty": 20080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4025,
+          "final_penalty": 19000,
+          "post_week_penalty": 23025,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4975,
+          "final_penalty": 14605,
+          "post_week_penalty": 19580,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2105,
+          "final_penalty": 3785,
+          "post_week_penalty": 5890,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1350,
+          "final_penalty": 3815,
+          "post_week_penalty": 5165,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2505,
+          "final_penalty": 2965,
+          "post_week_penalty": 5470,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5580,
+          "final_penalty": 14520,
+          "post_week_penalty": 20100,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4500,
+          "final_penalty": 17395,
+          "post_week_penalty": 21895,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "thompson"
+    },
+    {
+      "n_eval": 8,
+      "repair_bandit": "thompson",
+      "rounds": 500,
+      "runs": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9705,
+          "final_penalty": 13535,
+          "post_week_penalty": 23240,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7590,
+          "final_penalty": 16065,
+          "post_week_penalty": 23655,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9925,
+          "final_penalty": 12710,
+          "post_week_penalty": 22635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2470,
+          "final_penalty": 3685,
+          "post_week_penalty": 6155,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2195,
+          "final_penalty": 3760,
+          "post_week_penalty": 5955,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1555,
+          "final_penalty": 4050,
+          "post_week_penalty": 5605,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9300,
+          "final_penalty": 12650,
+          "post_week_penalty": 21950,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5585,
+          "final_penalty": 17825,
+          "post_week_penalty": 23410,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6680,
+          "final_penalty": 15040,
+          "post_week_penalty": 21720,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6405,
+          "final_penalty": 18295,
+          "post_week_penalty": 24700,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8110,
+          "final_penalty": 13730,
+          "post_week_penalty": 21840,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2800,
+          "final_penalty": 3640,
+          "post_week_penalty": 6440,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1865,
+          "final_penalty": 4345,
+          "post_week_penalty": 6210,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1400,
+          "final_penalty": 3520,
+          "post_week_penalty": 4920,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9260,
+          "final_penalty": 12155,
+          "post_week_penalty": 21415,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 7180,
+          "final_penalty": 19780,
+          "post_week_penalty": 26960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5665,
+          "final_penalty": 14415,
+          "post_week_penalty": 20080,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4725,
+          "final_penalty": 18300,
+          "post_week_penalty": 23025,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6345,
+          "final_penalty": 13235,
+          "post_week_penalty": 19580,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2545,
+          "final_penalty": 3345,
+          "post_week_penalty": 5890,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1215,
+          "final_penalty": 3950,
+          "post_week_penalty": 5165,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1930,
+          "final_penalty": 3540,
+          "post_week_penalty": 5470,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 6130,
+          "final_penalty": 13970,
+          "post_week_penalty": 20100,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5665,
+          "final_penalty": 16230,
+          "post_week_penalty": 21895,
+          "seed": 2
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "week_bandit": "thompson"
+    }
+  ],
+  "wall_clock_s": 590.5475767920725
+}

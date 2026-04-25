@@ -1,0 +1,12 @@
+[exp06] week-level scaling
+  N_train=10
+  N_train=25
+  N_train=50
+  N_train=100
+  N_train=200
+[exp06] repair-level scaling
+  N_train=10
+  N_train=25
+  N_train=50
+  N_train=100
+[exp06] done

@@ -1,0 +1,157 @@
+[
+  {
+    "alpha": 1.0,
+    "reward_scale": 250.0,
+    "warm_start": 8,
+    "train_s": 16.41,
+    "eval_s": 0.11,
+    "n_eval": 8,
+    "mean_delta": 9014.38,
+    "mean_final_penalty": 14470.0,
+    "checkpoint": "experiments/exp04_reward_scale/results/week_sweep/checkpoints/week_a1p0_rs250p0_ws8.npz",
+    "per_instance_delta": [
+      11205.0,
+      14115.0,
+      6715.0,
+      3815.0,
+      2450.0,
+      3810.0,
+      13670.0,
+      16335.0
+    ],
+    "per_instance_final": [
+      18120.0,
+      23340.0,
+      22295.0,
+      4670.0,
+      5990.0,
+      4600.0,
+      15475.0,
+      21270.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 500.0,
+    "warm_start": 8,
+    "train_s": 16.38,
+    "eval_s": 0.1,
+    "n_eval": 8,
+    "mean_delta": 9444.38,
+    "mean_final_penalty": 14040.0,
+    "checkpoint": "experiments/exp04_reward_scale/results/week_sweep/checkpoints/week_a1p0_rs500p0_ws8.npz",
+    "per_instance_delta": [
+      11205.0,
+      14275.0,
+      9205.0,
+      3815.0,
+      2450.0,
+      3810.0,
+      13670.0,
+      17125.0
+    ],
+    "per_instance_final": [
+      18120.0,
+      23180.0,
+      19805.0,
+      4670.0,
+      5990.0,
+      4600.0,
+      15475.0,
+      20480.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 8,
+    "train_s": 16.4,
+    "eval_s": 0.1,
+    "n_eval": 8,
+    "mean_delta": 10355.62,
+    "mean_final_penalty": 13128.75,
+    "checkpoint": "experiments/exp04_reward_scale/results/week_sweep/checkpoints/week_a1p0_rs1000p0_ws8.npz",
+    "per_instance_delta": [
+      12800.0,
+      18700.0,
+      11005.0,
+      3140.0,
+      3495.0,
+      2995.0,
+      13010.0,
+      17700.0
+    ],
+    "per_instance_final": [
+      16525.0,
+      18755.0,
+      18005.0,
+      5345.0,
+      4945.0,
+      5415.0,
+      16135.0,
+      19905.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 2000.0,
+    "warm_start": 8,
+    "train_s": 16.26,
+    "eval_s": 0.1,
+    "n_eval": 8,
+    "mean_delta": 10792.5,
+    "mean_final_penalty": 12691.88,
+    "checkpoint": "experiments/exp04_reward_scale/results/week_sweep/checkpoints/week_a1p0_rs2000p0_ws8.npz",
+    "per_instance_delta": [
+      12800.0,
+      18995.0,
+      13825.0,
+      3140.0,
+      3065.0,
+      3805.0,
+      13010.0,
+      17700.0
+    ],
+    "per_instance_final": [
+      16525.0,
+      18460.0,
+      15185.0,
+      5345.0,
+      5375.0,
+      4605.0,
+      16135.0,
+      19905.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 4000.0,
+    "warm_start": 8,
+    "train_s": 16.26,
+    "eval_s": 0.11,
+    "n_eval": 8,
+    "mean_delta": 11124.38,
+    "mean_final_penalty": 12360.0,
+    "checkpoint": "experiments/exp04_reward_scale/results/week_sweep/checkpoints/week_a1p0_rs4000p0_ws8.npz",
+    "per_instance_delta": [
+      13565.0,
+      19705.0,
+      13825.0,
+      3275.0,
+      3695.0,
+      3230.0,
+      13670.0,
+      18030.0
+    ],
+    "per_instance_final": [
+      15760.0,
+      17750.0,
+      15185.0,
+      5210.0,
+      4745.0,
+      5180.0,
+      15475.0,
+      19575.0
+    ]
+  }
+]

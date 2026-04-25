@@ -1,0 +1,25 @@
+[sweep] level=repair combos=5 train=train eval=dev
+
+[sweep 1/5] alpha=1.0 reward_scale=10.0 warm=36
+  train=394.5s eval=8.4s meanΔ=9358.12 meanFinal=11041.25
+
+[sweep 2/5] alpha=1.0 reward_scale=25.0 warm=36
+  train=398.0s eval=8.6s meanΔ=9603.75 meanFinal=10795.62
+
+[sweep 3/5] alpha=1.0 reward_scale=50.0 warm=36
+  train=395.6s eval=8.3s meanΔ=8783.12 meanFinal=11616.25
+
+[sweep 4/5] alpha=1.0 reward_scale=100.0 warm=36
+  train=393.9s eval=8.0s meanΔ=9248.12 meanFinal=11151.25
+
+[sweep 5/5] alpha=1.0 reward_scale=250.0 warm=36
+  train=393.1s eval=8.3s meanΔ=8860.62 meanFinal=11538.75
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=25.0 ws=36 → meanΔ=9603.75  meanFinal=10795.62  (n=8)
+  alpha=1.0 rs=10.0 ws=36 → meanΔ=9358.12  meanFinal=11041.25  (n=8)
+  alpha=1.0 rs=100.0 ws=36 → meanΔ=9248.12  meanFinal=11151.25  (n=8)
+  alpha=1.0 rs=250.0 ws=36 → meanΔ=8860.62  meanFinal=11538.75  (n=8)
+  alpha=1.0 rs=50.0 ws=36 → meanΔ=8783.12  meanFinal=11616.25  (n=8)
+
+wrote experiments/exp04_reward_scale/results/repair_sweep/results.csv and experiments/exp04_reward_scale/results/repair_sweep/results.json

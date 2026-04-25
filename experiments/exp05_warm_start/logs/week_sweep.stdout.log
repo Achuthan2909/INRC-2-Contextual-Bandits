@@ -1,0 +1,21 @@
+[sweep] level=week combos=4 train=train eval=dev
+
+[sweep 1/4] alpha=1.0 reward_scale=1000.0 warm=0
+  train=16.3s eval=0.1s meanΔ=9348.12 meanFinal=14136.25
+
+[sweep 2/4] alpha=1.0 reward_scale=1000.0 warm=4
+  train=16.3s eval=0.1s meanΔ=11125.0 meanFinal=12359.38
+
+[sweep 3/4] alpha=1.0 reward_scale=1000.0 warm=8
+  train=16.2s eval=0.1s meanΔ=10355.62 meanFinal=13128.75
+
+[sweep 4/4] alpha=1.0 reward_scale=1000.0 warm=16
+  train=16.5s eval=0.1s meanΔ=9561.88 meanFinal=13922.5
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=4 → meanΔ=11125.0  meanFinal=12359.38  (n=8)
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=10355.62  meanFinal=13128.75  (n=8)
+  alpha=1.0 rs=1000.0 ws=16 → meanΔ=9561.88  meanFinal=13922.5  (n=8)
+  alpha=1.0 rs=1000.0 ws=0 → meanΔ=9348.12  meanFinal=14136.25  (n=8)
+
+wrote experiments/exp05_warm_start/results/week_sweep/results.csv and experiments/exp05_warm_start/results/week_sweep/results.json

@@ -1,0 +1,126 @@
+[
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 0,
+    "train_s": 16.27,
+    "eval_s": 0.11,
+    "n_eval": 8,
+    "mean_delta": 9348.12,
+    "mean_final_penalty": 14136.25,
+    "checkpoint": "experiments/exp05_warm_start/results/week_sweep/checkpoints/week_a1p0_rs1000p0_ws0.npz",
+    "per_instance_delta": [
+      11850.0,
+      14755.0,
+      10640.0,
+      2830.0,
+      2470.0,
+      3505.0,
+      12490.0,
+      16245.0
+    ],
+    "per_instance_final": [
+      17475.0,
+      22700.0,
+      18370.0,
+      5655.0,
+      5970.0,
+      4905.0,
+      16655.0,
+      21360.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 4,
+    "train_s": 16.25,
+    "eval_s": 0.1,
+    "n_eval": 8,
+    "mean_delta": 11125.0,
+    "mean_final_penalty": 12359.38,
+    "checkpoint": "experiments/exp05_warm_start/results/week_sweep/checkpoints/week_a1p0_rs1000p0_ws4.npz",
+    "per_instance_delta": [
+      13565.0,
+      19705.0,
+      13825.0,
+      3335.0,
+      3065.0,
+      3805.0,
+      13670.0,
+      18030.0
+    ],
+    "per_instance_final": [
+      15760.0,
+      17750.0,
+      15185.0,
+      5150.0,
+      5375.0,
+      4605.0,
+      15475.0,
+      19575.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 8,
+    "train_s": 16.22,
+    "eval_s": 0.1,
+    "n_eval": 8,
+    "mean_delta": 10355.62,
+    "mean_final_penalty": 13128.75,
+    "checkpoint": "experiments/exp05_warm_start/results/week_sweep/checkpoints/week_a1p0_rs1000p0_ws8.npz",
+    "per_instance_delta": [
+      12800.0,
+      18700.0,
+      11005.0,
+      3140.0,
+      3495.0,
+      2995.0,
+      13010.0,
+      17700.0
+    ],
+    "per_instance_final": [
+      16525.0,
+      18755.0,
+      18005.0,
+      5345.0,
+      4945.0,
+      5415.0,
+      16135.0,
+      19905.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 16,
+    "train_s": 16.51,
+    "eval_s": 0.11,
+    "n_eval": 8,
+    "mean_delta": 9561.88,
+    "mean_final_penalty": 13922.5,
+    "checkpoint": "experiments/exp05_warm_start/results/week_sweep/checkpoints/week_a1p0_rs1000p0_ws16.npz",
+    "per_instance_delta": [
+      11205.0,
+      15835.0,
+      9205.0,
+      3815.0,
+      2450.0,
+      3495.0,
+      14155.0,
+      16335.0
+    ],
+    "per_instance_final": [
+      18120.0,
+      21620.0,
+      19805.0,
+      4670.0,
+      5990.0,
+      4915.0,
+      14990.0,
+      21270.0
+    ]
+  }
+]

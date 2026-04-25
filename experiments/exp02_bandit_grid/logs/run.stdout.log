@@ -1,0 +1,27 @@
+[exp02] eval instances: ['n021w4', 'n012w8', 'n021w4', 'n005w4', 'n005w4', 'n005w4', 'n021w4', 'n012w8']
+[exp02] cell 1/25 (linucb/linucb) 24 runs in 23.5s
+[exp02] cell 2/25 (linucb/uniform) 24 runs in 22.7s
+[exp02] cell 3/25 (linucb/ucb1) 24 runs in 22.2s
+[exp02] cell 4/25 (linucb/epsilon_greedy) 24 runs in 22.9s
+[exp02] cell 5/25 (linucb/thompson) 24 runs in 22.8s
+[exp02] cell 6/25 (uniform/linucb) 24 runs in 24.1s
+[exp02] cell 7/25 (uniform/uniform) 24 runs in 23.1s
+[exp02] cell 8/25 (uniform/ucb1) 24 runs in 23.9s
+[exp02] cell 9/25 (uniform/epsilon_greedy) 24 runs in 23.8s
+[exp02] cell 10/25 (uniform/thompson) 24 runs in 23.2s
+[exp02] cell 11/25 (ucb1/linucb) 24 runs in 24.0s
+[exp02] cell 12/25 (ucb1/uniform) 24 runs in 23.1s
+[exp02] cell 13/25 (ucb1/ucb1) 24 runs in 23.0s
+[exp02] cell 14/25 (ucb1/epsilon_greedy) 24 runs in 24.5s
+[exp02] cell 15/25 (ucb1/thompson) 24 runs in 24.8s
+[exp02] cell 16/25 (epsilon_greedy/linucb) 24 runs in 25.1s
+[exp02] cell 17/25 (epsilon_greedy/uniform) 24 runs in 23.0s
+[exp02] cell 18/25 (epsilon_greedy/ucb1) 24 runs in 23.2s
+[exp02] cell 19/25 (epsilon_greedy/epsilon_greedy) 24 runs in 23.5s
+[exp02] cell 20/25 (epsilon_greedy/thompson) 24 runs in 23.4s
+[exp02] cell 21/25 (thompson/linucb) 24 runs in 24.5s
+[exp02] cell 22/25 (thompson/uniform) 24 runs in 23.0s
+[exp02] cell 23/25 (thompson/ucb1) 24 runs in 25.1s
+[exp02] cell 24/25 (thompson/epsilon_greedy) 24 runs in 24.1s
+[exp02] cell 25/25 (thompson/thompson) 24 runs in 24.2s
+[exp02] done in 590.6s

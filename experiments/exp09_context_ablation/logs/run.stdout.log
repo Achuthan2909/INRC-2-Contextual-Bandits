@@ -1,0 +1,47 @@
+[exp09:week] instances=['n021w4', 'n012w8', 'n021w4', 'n005w4', 'n005w4', 'n005w4']
+
+[exp09:week] ablation=full
+[exp09:week] full: mean_final=8143.9 mean_Δ=3734.4 (train 7.6s)
+
+[exp09:week] ablation=mask:coverage_slack
+[exp09:week] mask:coverage_slack: mean_final=8163.6 mean_Δ=3323.9 (train 7.5s)
+
+[exp09:week] ablation=mask:mean_fatigue_ratio
+[exp09:week] mask:mean_fatigue_ratio: mean_final=8338.9 mean_Δ=3732.8 (train 7.5s)
+
+[exp09:week] ablation=mask:weekend_spread_ratio
+[exp09:week] mask:weekend_spread_ratio: mean_final=7991.4 mean_Δ=3647.8 (train 7.8s)
+
+[exp09:week] ablation=mask:request_density
+[exp09:week] mask:request_density: mean_final=7963.6 mean_Δ=3097.2 (train 7.7s)
+
+[exp09:week] ablation=mask:max_assignment_saturation
+[exp09:week] mask:max_assignment_saturation: mean_final=7622.2 mean_Δ=2904.4 (train 7.9s)
+
+[exp09:week] ablation=mask:week_position
+[exp09:week] mask:week_position: mean_final=7757.8 mean_Δ=2612.2 (train 8.0s)
+[exp09:repair] instances=['n021w4', 'n012w8', 'n021w4', 'n005w4', 'n005w4', 'n005w4']
+
+[exp09:repair] ablation=full
+[exp09:repair] full: mean_final=8213.9 mean_Δ=3906.9 (train 398.9s)
+
+[exp09:repair] ablation=mask:s1_share
+[exp09:repair] mask:s1_share: mean_final=9665.8 mean_Δ=2455.0 (train 726.5s)
+
+[exp09:repair] ablation=mask:s2_share
+[exp09:repair] mask:s2_share: mean_final=8453.3 mean_Δ=3667.5 (train 374.8s)
+
+[exp09:repair] ablation=mask:s3_share
+[exp09:repair] mask:s3_share: mean_final=8308.9 mean_Δ=3811.9 (train 394.9s)
+
+[exp09:repair] ablation=mask:s4_share
+[exp09:repair] mask:s4_share: mean_final=8378.3 mean_Δ=3742.5 (train 399.7s)
+
+[exp09:repair] ablation=mask:s5_s7_share
+[exp09:repair] mask:s5_s7_share: mean_final=8195.6 mean_Δ=3925.3 (train 400.4s)
+
+[exp09:repair] ablation=mask:s6_share
+[exp09:repair] mask:s6_share: mean_final=8267.5 mean_Δ=3853.3 (train 396.5s)
+
+[exp09:repair] ablation=mask:progress_ratio
+[exp09:repair] mask:progress_ratio: mean_final=8481.4 mean_Δ=3639.4 (train 396.1s)

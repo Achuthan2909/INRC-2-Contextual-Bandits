@@ -1,0 +1,28 @@
+[run_all] >>> exp02_bandit_grid
+[run_all] <<< exp02_bandit_grid done
+[exp02 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp02_bandit_grid/figures/grid_*.png
+[run_all] >>> exp04_reward_scale
+[run_all] <<< exp04_reward_scale done
+[exp04 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp04_reward_scale/figures/reward_scale_week.png
+[exp04 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp04_reward_scale/figures/reward_scale_repair.png
+[run_all] >>> exp05_warm_start
+[run_all] <<< exp05_warm_start done
+[exp05 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp05_warm_start/figures/warm_start_week.png
+[exp05 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp05_warm_start/figures/warm_start_repair.png
+[run_all] >>> exp06_data_scaling
+[run_all] <<< exp06_data_scaling done
+[exp06 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp06_data_scaling/figures/data_scaling_week.png
+[exp06 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp06_data_scaling/figures/data_scaling_repair.png
+[run_all] >>> exp09_context_ablation
+[run_all] <<< exp09_context_ablation done
+[exp09 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp09_context_ablation/figures/ablation_week.png
+[exp09 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp09_context_ablation/figures/ablation_repair.png
+[run_all] >>> exp10_size_breakdown
+[run_all] <<< exp10_size_breakdown done
+[exp10 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp10_size_breakdown/figures/size_bars.png
+[exp10 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp10_size_breakdown/figures/linucb_advantage_by_size.png
+[run_all] >>> exp11_ood_repair
+[run_all] <<< exp11_ood_repair done
+[exp11 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp11_ood_repair/figures/ood_curves.png
+[exp11 plot] wrote /Users/achu/Projects/INRC-2-Contextual-Bandits/experiments/exp11_ood_repair/figures/ood_delta_per_start.png
+[run_all] ALL DONE

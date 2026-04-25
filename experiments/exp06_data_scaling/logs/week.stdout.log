@@ -1,0 +1,45 @@
+[sweep] level=week combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=1000.0 warm=8
+  train=0.6s eval=0.1s meanΔ=7073.75 meanFinal=16410.62
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=7073.75  meanFinal=16410.62  (n=8)
+
+wrote experiments/exp06_data_scaling/results/week_n10/results.csv and experiments/exp06_data_scaling/results/week_n10/results.json
+[sweep] level=week combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=1000.0 warm=8
+  train=2.2s eval=0.1s meanΔ=9650.62 meanFinal=13833.75
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=9650.62  meanFinal=13833.75  (n=8)
+
+wrote experiments/exp06_data_scaling/results/week_n25/results.csv and experiments/exp06_data_scaling/results/week_n25/results.json
+[sweep] level=week combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=1000.0 warm=8
+  train=4.1s eval=0.1s meanΔ=9897.5 meanFinal=13586.88
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=9897.5  meanFinal=13586.88  (n=8)
+
+wrote experiments/exp06_data_scaling/results/week_n50/results.csv and experiments/exp06_data_scaling/results/week_n50/results.json
+[sweep] level=week combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=1000.0 warm=8
+  train=7.8s eval=0.1s meanΔ=9641.88 meanFinal=13842.5
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=9641.88  meanFinal=13842.5  (n=8)
+
+wrote experiments/exp06_data_scaling/results/week_n100/results.csv and experiments/exp06_data_scaling/results/week_n100/results.json
+[sweep] level=week combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=1000.0 warm=8
+  train=16.6s eval=0.1s meanΔ=10355.62 meanFinal=13128.75
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=1000.0 ws=8 → meanΔ=10355.62  meanFinal=13128.75  (n=8)
+
+wrote experiments/exp06_data_scaling/results/week_n200/results.csv and experiments/exp06_data_scaling/results/week_n200/results.json

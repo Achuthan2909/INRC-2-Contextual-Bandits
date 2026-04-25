@@ -1,0 +1,677 @@
+[
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "epsilon_greedy",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3873.3333333333335,
+    "std_final_penalty": 422.70294271246536
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "epsilon_greedy",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18175.833333333332,
+    "std_final_penalty": 1248.7407546093073
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "epsilon_greedy",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13779.444444444445,
+    "std_final_penalty": 709.324578754107
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "linucb",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3590.0,
+    "std_final_penalty": 264.921371982959
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "linucb",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 15373.333333333334,
+    "std_final_penalty": 1008.3636359083079
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "linucb",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 11411.666666666666,
+    "std_final_penalty": 822.0029737713172
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "thompson",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3581.1111111111113,
+    "std_final_penalty": 227.45912670409086
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "thompson",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 16681.666666666668,
+    "std_final_penalty": 644.1575031689757
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "thompson",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13570.0,
+    "std_final_penalty": 995.8915603618699
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "ucb1",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3861.6666666666665,
+    "std_final_penalty": 480.42226796387735
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "ucb1",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17077.5,
+    "std_final_penalty": 1704.6694449853514
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "ucb1",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12847.777777777777,
+    "std_final_penalty": 1110.9458210389698
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "uniform",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3855.5555555555557,
+    "std_final_penalty": 216.91581117060707
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "uniform",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18094.166666666668,
+    "std_final_penalty": 946.4909608067522
+  },
+  {
+    "week_bandit": "epsilon_greedy",
+    "repair_bandit": "uniform",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 15399.444444444445,
+    "std_final_penalty": 823.4866403977543
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "epsilon_greedy",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3913.8888888888887,
+    "std_final_penalty": 340.3411505613626
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "epsilon_greedy",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17597.5,
+    "std_final_penalty": 1568.8922578260963
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "epsilon_greedy",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12545.555555555555,
+    "std_final_penalty": 872.8002331081152
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "linucb",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3600.0,
+    "std_final_penalty": 330.4374205335844
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "linucb",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 15941.666666666666,
+    "std_final_penalty": 558.1417581781731
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "linucb",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 11494.444444444445,
+    "std_final_penalty": 401.5486994434067
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "thompson",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3855.5555555555557,
+    "std_final_penalty": 387.0791222910121
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "thompson",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18260.833333333332,
+    "std_final_penalty": 1005.3955136606135
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "thompson",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13444.444444444445,
+    "std_final_penalty": 794.8984716596917
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "ucb1",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 4033.3333333333335,
+    "std_final_penalty": 525.9171882424921
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "ucb1",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17149.166666666668,
+    "std_final_penalty": 1389.4405848717995
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "ucb1",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12586.666666666666,
+    "std_final_penalty": 1186.8164699452623
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "uniform",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3795.0,
+    "std_final_penalty": 325.08118644083015
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "uniform",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18220.833333333332,
+    "std_final_penalty": 1139.9138003472992
+  },
+  {
+    "week_bandit": "linucb",
+    "repair_bandit": "uniform",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 14509.444444444445,
+    "std_final_penalty": 823.9115528462871
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "epsilon_greedy",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3794.4444444444443,
+    "std_final_penalty": 388.0681816127765
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "epsilon_greedy",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17178.333333333332,
+    "std_final_penalty": 982.4869238598321
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "epsilon_greedy",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13479.444444444445,
+    "std_final_penalty": 1497.5599495409645
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "linucb",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3525.5555555555557,
+    "std_final_penalty": 269.6236517448848
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "linucb",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 15192.5,
+    "std_final_penalty": 691.6330313106799
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "linucb",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 11418.333333333334,
+    "std_final_penalty": 1029.166329284695
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "thompson",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3759.4444444444443,
+    "std_final_penalty": 290.7217497925966
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "thompson",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17749.166666666668,
+    "std_final_penalty": 1282.9439344292832
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "thompson",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13493.333333333334,
+    "std_final_penalty": 863.410549957422
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "ucb1",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 4096.111111111111,
+    "std_final_penalty": 413.94294948953865
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "ucb1",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17328.333333333332,
+    "std_final_penalty": 1681.8780838363075
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "ucb1",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13112.777777777777,
+    "std_final_penalty": 2002.99374702401
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "uniform",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3950.0,
+    "std_final_penalty": 356.4874939367906
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "uniform",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18961.666666666668,
+    "std_final_penalty": 740.7522452810312
+  },
+  {
+    "week_bandit": "thompson",
+    "repair_bandit": "uniform",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 15342.777777777777,
+    "std_final_penalty": 1068.9353766744614
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "epsilon_greedy",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3538.3333333333335,
+    "std_final_penalty": 259.8931404336106
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "epsilon_greedy",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 16829.166666666668,
+    "std_final_penalty": 959.7804291723301
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "epsilon_greedy",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12605.555555555555,
+    "std_final_penalty": 937.5957564265826
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "linucb",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3566.1111111111113,
+    "std_final_penalty": 173.8578247013247
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "linucb",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 14521.666666666666,
+    "std_final_penalty": 1204.7118143172481
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "linucb",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 10825.0,
+    "std_final_penalty": 667.936291040462
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "thompson",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3682.777777777778,
+    "std_final_penalty": 235.39695918822255
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "thompson",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 16870.0,
+    "std_final_penalty": 1015.9396307524052
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "thompson",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13829.444444444445,
+    "std_final_penalty": 920.5808686924083
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "ucb1",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3777.222222222222,
+    "std_final_penalty": 503.70908221529305
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "ucb1",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17264.166666666668,
+    "std_final_penalty": 1706.3812017118437
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "ucb1",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13445.555555555555,
+    "std_final_penalty": 1503.1438247967794
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "uniform",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 4036.6666666666665,
+    "std_final_penalty": 409.09792362111926
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "uniform",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 18745.833333333332,
+    "std_final_penalty": 696.5295917778528
+  },
+  {
+    "week_bandit": "ucb1",
+    "repair_bandit": "uniform",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 15425.0,
+    "std_final_penalty": 797.8373546309075
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "epsilon_greedy",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3675.0,
+    "std_final_penalty": 412.8088069689298
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "epsilon_greedy",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 15935.0,
+    "std_final_penalty": 1218.834826107842
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "epsilon_greedy",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12896.666666666666,
+    "std_final_penalty": 1204.8720540649397
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "linucb",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3445.0,
+    "std_final_penalty": 256.7424130654432
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "linucb",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 15155.0,
+    "std_final_penalty": 1006.7025379922313
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "linucb",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 11490.0,
+    "std_final_penalty": 1051.2585050521325
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "thompson",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3756.1111111111113,
+    "std_final_penalty": 284.6320995579477
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "thompson",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 16500.833333333332,
+    "std_final_penalty": 995.541798330046
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "thompson",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 13305.555555555555,
+    "std_final_penalty": 924.4711534603159
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "ucb1",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 4068.3333333333335,
+    "std_final_penalty": 513.5605557716095
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "ucb1",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 16974.166666666668,
+    "std_final_penalty": 224.39579368210585
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "ucb1",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 12248.333333333334,
+    "std_final_penalty": 1786.0228939679855
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "uniform",
+    "size": 5,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 3883.3333333333335,
+    "std_final_penalty": 125.8526475243524
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "uniform",
+    "size": 12,
+    "weeks": 8,
+    "n": 6,
+    "mean_final_penalty": 17233.333333333332,
+    "std_final_penalty": 871.4674724598478
+  },
+  {
+    "week_bandit": "uniform",
+    "repair_bandit": "uniform",
+    "size": 21,
+    "weeks": 4,
+    "n": 9,
+    "mean_final_penalty": 15251.111111111111,
+    "std_final_penalty": 1016.3736675547854
+  }
+]

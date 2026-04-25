@@ -1,0 +1,36 @@
+[sweep] level=repair combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=50.0 warm=36
+  train=68.5s eval=8.5s meanΔ=8931.88 meanFinal=11467.5
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=50.0 ws=36 → meanΔ=8931.88  meanFinal=11467.5  (n=8)
+
+wrote experiments/exp06_data_scaling/results/repair_n10/results.csv and experiments/exp06_data_scaling/results/repair_n10/results.json
+[sweep] level=repair combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=50.0 warm=36
+  train=187.9s eval=8.8s meanΔ=8493.12 meanFinal=11906.25
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=50.0 ws=36 → meanΔ=8493.12  meanFinal=11906.25  (n=8)
+
+wrote experiments/exp06_data_scaling/results/repair_n25/results.csv and experiments/exp06_data_scaling/results/repair_n25/results.json
+[sweep] level=repair combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=50.0 warm=36
+  train=346.2s eval=8.7s meanΔ=9090.62 meanFinal=11308.75
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=50.0 ws=36 → meanΔ=9090.62  meanFinal=11308.75  (n=8)
+
+wrote experiments/exp06_data_scaling/results/repair_n50/results.csv and experiments/exp06_data_scaling/results/repair_n50/results.json
+[sweep] level=repair combos=1 train=train eval=dev
+
+[sweep 1/1] alpha=1.0 reward_scale=50.0 warm=36
+  train=693.7s eval=8.1s meanΔ=8958.75 meanFinal=11440.62
+
+=== Ranking (by mean Δpenalty, higher is better) ===
+  alpha=1.0 rs=50.0 ws=36 → meanΔ=8958.75  meanFinal=11440.62  (n=8)
+
+wrote experiments/exp06_data_scaling/results/repair_n100/results.csv and experiments/exp06_data_scaling/results/repair_n100/results.json

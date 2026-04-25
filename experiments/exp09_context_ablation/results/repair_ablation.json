@@ -1,0 +1,976 @@
+{
+  "config": {
+    "level": "repair",
+    "max_train_instances": 60,
+    "n_eval": 6,
+    "rounds": 500,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "feature_labels": [
+    "s1_share",
+    "s2_share",
+    "s3_share",
+    "s4_share",
+    "s5_s7_share",
+    "s6_share",
+    "progress_ratio"
+  ],
+  "rows": [
+    {
+      "ablation": "full",
+      "feature_idx": null,
+      "mean_delta": 3906.9444444444443,
+      "mean_final_penalty": 8213.888888888889,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5390,
+          "final_penalty": 10790,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5790,
+          "final_penalty": 15830,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9150,
+          "final_penalty": 10655,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 815,
+          "final_penalty": 3855,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1535,
+          "final_penalty": 4235,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 955,
+          "final_penalty": 3725,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5715,
+          "final_penalty": 10465,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6110,
+          "final_penalty": 15510,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7540,
+          "final_penalty": 12265,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 875,
+          "final_penalty": 3795,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1985,
+          "final_penalty": 3785,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1160,
+          "final_penalty": 3520,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4390,
+          "final_penalty": 11790,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6285,
+          "final_penalty": 15335,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8620,
+          "final_penalty": 11185,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1020,
+          "final_penalty": 3650,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1540,
+          "final_penalty": 4230,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1450,
+          "final_penalty": 3230,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4686.472718709657,
+      "train_s": 398.8524918339681
+    },
+    {
+      "ablation": "mask:s1_share",
+      "feature_idx": 0,
+      "mean_delta": 2455.0,
+      "mean_final_penalty": 9665.833333333334,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3310,
+          "final_penalty": 12870,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4425,
+          "final_penalty": 17195,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5470,
+          "final_penalty": 14335,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 335,
+          "final_penalty": 4335,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1875,
+          "final_penalty": 3895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 235,
+          "final_penalty": 4445,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 2530,
+          "final_penalty": 13650,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5405,
+          "final_penalty": 16215,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4410,
+          "final_penalty": 15395,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": -255,
+          "final_penalty": 4925,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1610,
+          "final_penalty": 4160,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 475,
+          "final_penalty": 4205,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 1870,
+          "final_penalty": 14310,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4075,
+          "final_penalty": 17545,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5870,
+          "final_penalty": 13935,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 330,
+          "final_penalty": 4340,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1530,
+          "final_penalty": 4240,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 690,
+          "final_penalty": 3990,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 5496.600275018489,
+      "train_s": 726.5022160420194
+    },
+    {
+      "ablation": "mask:s2_share",
+      "feature_idx": 1,
+      "mean_delta": 3667.5,
+      "mean_final_penalty": 8453.333333333334,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5295,
+          "final_penalty": 10885,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5105,
+          "final_penalty": 16515,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8345,
+          "final_penalty": 11460,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 775,
+          "final_penalty": 3895,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1655,
+          "final_penalty": 4115,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 845,
+          "final_penalty": 3835,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4065,
+          "final_penalty": 12115,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5620,
+          "final_penalty": 16000,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7295,
+          "final_penalty": 12510,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1395,
+          "final_penalty": 3275,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1970,
+          "final_penalty": 3800,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 870,
+          "final_penalty": 3810,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4285,
+          "final_penalty": 11895,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6785,
+          "final_penalty": 14835,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8175,
+          "final_penalty": 11630,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1085,
+          "final_penalty": 3585,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1775,
+          "final_penalty": 3995,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 675,
+          "final_penalty": 4005,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4851.94577234513,
+      "train_s": 374.8032804169925
+    },
+    {
+      "ablation": "mask:s3_share",
+      "feature_idx": 2,
+      "mean_delta": 3811.9444444444443,
+      "mean_final_penalty": 8308.888888888889,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4790,
+          "final_penalty": 11390,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6415,
+          "final_penalty": 15205,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7380,
+          "final_penalty": 12425,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 930,
+          "final_penalty": 3740,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2210,
+          "final_penalty": 3560,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 860,
+          "final_penalty": 3820,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4255,
+          "final_penalty": 11925,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5545,
+          "final_penalty": 16075,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8850,
+          "final_penalty": 10955,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1410,
+          "final_penalty": 3260,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1840,
+          "final_penalty": 3930,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1380,
+          "final_penalty": 3300,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3530,
+          "final_penalty": 12650,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6560,
+          "final_penalty": 15060,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8845,
+          "final_penalty": 10960,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1065,
+          "final_penalty": 3605,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1355,
+          "final_penalty": 4415,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1395,
+          "final_penalty": 3285,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4840.189836599489,
+      "train_s": 394.8569839170668
+    },
+    {
+      "ablation": "mask:s4_share",
+      "feature_idx": 3,
+      "mean_delta": 3742.5,
+      "mean_final_penalty": 8378.333333333334,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4725,
+          "final_penalty": 11455,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5495,
+          "final_penalty": 16125,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8055,
+          "final_penalty": 11750,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1135,
+          "final_penalty": 3535,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1685,
+          "final_penalty": 4085,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1195,
+          "final_penalty": 3485,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5160,
+          "final_penalty": 11020,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5355,
+          "final_penalty": 16265,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8335,
+          "final_penalty": 11470,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1115,
+          "final_penalty": 3555,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1770,
+          "final_penalty": 4000,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1210,
+          "final_penalty": 3470,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4440,
+          "final_penalty": 11740,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5840,
+          "final_penalty": 15780,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7945,
+          "final_penalty": 11860,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 740,
+          "final_penalty": 3930,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1655,
+          "final_penalty": 4115,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1510,
+          "final_penalty": 3170,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4917.318883294025,
+      "train_s": 399.7114320000401
+    },
+    {
+      "ablation": "mask:s5_s7_share",
+      "feature_idx": 4,
+      "mean_delta": 3925.277777777778,
+      "mean_final_penalty": 8195.555555555555,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4975,
+          "final_penalty": 11205,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6240,
+          "final_penalty": 15380,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9270,
+          "final_penalty": 10535,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 585,
+          "final_penalty": 4085,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2035,
+          "final_penalty": 3735,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 745,
+          "final_penalty": 3935,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 5020,
+          "final_penalty": 11160,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5170,
+          "final_penalty": 16450,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8475,
+          "final_penalty": 11330,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1340,
+          "final_penalty": 3330,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2115,
+          "final_penalty": 3655,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1180,
+          "final_penalty": 3500,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4520,
+          "final_penalty": 11660,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5095,
+          "final_penalty": 16525,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9080,
+          "final_penalty": 10725,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1385,
+          "final_penalty": 3285,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1970,
+          "final_penalty": 3800,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1455,
+          "final_penalty": 3225,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4888.192090495242,
+      "train_s": 400.40386495902203
+    },
+    {
+      "ablation": "mask:s6_share",
+      "feature_idx": 5,
+      "mean_delta": 3853.3333333333335,
+      "mean_final_penalty": 8267.5,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4110,
+          "final_penalty": 12070,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6000,
+          "final_penalty": 15620,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 9670,
+          "final_penalty": 10135,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 695,
+          "final_penalty": 3975,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1435,
+          "final_penalty": 4335,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1200,
+          "final_penalty": 3480,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4335,
+          "final_penalty": 11845,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5660,
+          "final_penalty": 15960,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8860,
+          "final_penalty": 10945,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1005,
+          "final_penalty": 3665,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1945,
+          "final_penalty": 3825,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1115,
+          "final_penalty": 3565,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4505,
+          "final_penalty": 11675,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 5975,
+          "final_penalty": 15645,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8925,
+          "final_penalty": 10880,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 760,
+          "final_penalty": 3910,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1955,
+          "final_penalty": 3815,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1210,
+          "final_penalty": 3470,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4747.41311136918,
+      "train_s": 396.45384487498086
+    },
+    {
+      "ablation": "mask:progress_ratio",
+      "feature_idx": 6,
+      "mean_delta": 3639.4444444444443,
+      "mean_final_penalty": 8481.388888888889,
+      "n_runs": 18,
+      "per_run": [
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4785,
+          "final_penalty": 11395,
+          "seed": 0
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 4600,
+          "final_penalty": 17020,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7745,
+          "final_penalty": 12060,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1035,
+          "final_penalty": 3635,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1440,
+          "final_penalty": 4330,
+          "seed": 0
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 875,
+          "final_penalty": 3805,
+          "seed": 0
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 3290,
+          "final_penalty": 12890,
+          "seed": 1
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6940,
+          "final_penalty": 14680,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 7480,
+          "final_penalty": 12325,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 975,
+          "final_penalty": 3695,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1805,
+          "final_penalty": 3965,
+          "seed": 1
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 640,
+          "final_penalty": 4040,
+          "seed": 1
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 4425,
+          "final_penalty": 11755,
+          "seed": 2
+        },
+        {
+          "dataset": "n012w8",
+          "delta_repair": 6875,
+          "final_penalty": 14745,
+          "seed": 2
+        },
+        {
+          "dataset": "n021w4",
+          "delta_repair": 8435,
+          "final_penalty": 11370,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 790,
+          "final_penalty": 3880,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 2330,
+          "final_penalty": 3440,
+          "seed": 2
+        },
+        {
+          "dataset": "n005w4",
+          "delta_repair": 1045,
+          "final_penalty": 3635,
+          "seed": 2
+        }
+      ],
+      "std_final_penalty": 4835.218541986022,
+      "train_s": 396.1282704999903
+    }
+  ]
+}
