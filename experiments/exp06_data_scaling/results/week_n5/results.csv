@@ -1,0 +1,2 @@
+alpha,reward_scale,warm_start,train_s,eval_s,n_eval,mean_delta,mean_final_penalty,checkpoint
+1.0,1000.0,8,0.5,0.17,8,8524.38,14960.0,experiments\exp06_data_scaling\results\week_n5\checkpoints\week_a1p0_rs1000p0_ws8.npz

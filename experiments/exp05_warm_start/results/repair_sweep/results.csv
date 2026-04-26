@@ -1,0 +1,6 @@
+alpha,reward_scale,warm_start,train_s,eval_s,n_eval,mean_delta,mean_final_penalty,checkpoint
+1.0,50.0,0,521.7,11.56,8,7448.12,12951.25,experiments\exp05_warm_start\results\repair_sweep\checkpoints\repair_a1p0_rs50p0_ws0.npz
+1.0,50.0,18,525.03,12.14,8,9409.38,10990.0,experiments\exp05_warm_start\results\repair_sweep\checkpoints\repair_a1p0_rs50p0_ws18.npz
+1.0,50.0,36,537.22,12.8,8,8948.12,11451.25,experiments\exp05_warm_start\results\repair_sweep\checkpoints\repair_a1p0_rs50p0_ws36.npz
+1.0,50.0,72,612.41,12.41,8,9082.5,11316.88,experiments\exp05_warm_start\results\repair_sweep\checkpoints\repair_a1p0_rs50p0_ws72.npz
+1.0,50.0,144,608.12,13.47,8,9090.62,11308.75,experiments\exp05_warm_start\results\repair_sweep\checkpoints\repair_a1p0_rs50p0_ws144.npz

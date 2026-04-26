@@ -1,0 +1,33 @@
+[
+  {
+    "alpha": 1.0,
+    "reward_scale": 1000.0,
+    "warm_start": 8,
+    "train_s": 6.65,
+    "eval_s": 0.18,
+    "n_eval": 8,
+    "mean_delta": 9897.5,
+    "mean_final_penalty": 13586.88,
+    "checkpoint": "experiments\\exp06_data_scaling\\results\\week_n50\\checkpoints\\week_a1p0_rs1000p0_ws8.npz",
+    "per_instance_delta": [
+      11220.0,
+      18000.0,
+      11005.0,
+      3140.0,
+      3495.0,
+      2995.0,
+      11520.0,
+      17805.0
+    ],
+    "per_instance_final": [
+      18105.0,
+      19455.0,
+      18005.0,
+      5345.0,
+      4945.0,
+      5415.0,
+      17625.0,
+      19800.0
+    ]
+  }
+]

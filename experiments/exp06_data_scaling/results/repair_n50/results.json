@@ -1,0 +1,33 @@
+[
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 36,
+    "train_s": 527.36,
+    "eval_s": 12.0,
+    "n_eval": 8,
+    "mean_delta": 9046.88,
+    "mean_final_penalty": 11352.5,
+    "checkpoint": "experiments\\exp06_data_scaling\\results\\repair_n50\\checkpoints\\repair_a1p0_rs50p0_ws36.npz",
+    "per_instance_delta": [
+      12080.0,
+      16990.0,
+      11465.0,
+      1555.0,
+      1350.0,
+      1005.0,
+      12645.0,
+      15285.0
+    ],
+    "per_instance_final": [
+      14370.0,
+      18595.0,
+      13875.0,
+      3920.0,
+      4295.0,
+      3730.0,
+      11985.0,
+      20050.0
+    ]
+  }
+]

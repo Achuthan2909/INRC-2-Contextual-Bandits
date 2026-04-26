@@ -1,0 +1,157 @@
+[
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 0,
+    "train_s": 521.7,
+    "eval_s": 11.56,
+    "n_eval": 8,
+    "mean_delta": 7448.12,
+    "mean_final_penalty": 12951.25,
+    "checkpoint": "experiments\\exp05_warm_start\\results\\repair_sweep\\checkpoints\\repair_a1p0_rs50p0_ws0.npz",
+    "per_instance_delta": [
+      8125.0,
+      13395.0,
+      8925.0,
+      1280.0,
+      1835.0,
+      925.0,
+      9075.0,
+      16025.0
+    ],
+    "per_instance_final": [
+      18325.0,
+      22190.0,
+      16415.0,
+      4195.0,
+      3810.0,
+      3810.0,
+      15555.0,
+      19310.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 18,
+    "train_s": 525.03,
+    "eval_s": 12.14,
+    "n_eval": 8,
+    "mean_delta": 9409.38,
+    "mean_final_penalty": 10990.0,
+    "checkpoint": "experiments\\exp05_warm_start\\results\\repair_sweep\\checkpoints\\repair_a1p0_rs50p0_ws18.npz",
+    "per_instance_delta": [
+      13110.0,
+      18815.0,
+      11450.0,
+      1485.0,
+      1700.0,
+      1375.0,
+      12125.0,
+      15215.0
+    ],
+    "per_instance_final": [
+      13340.0,
+      16770.0,
+      13890.0,
+      3990.0,
+      3945.0,
+      3360.0,
+      12505.0,
+      20120.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 36,
+    "train_s": 537.22,
+    "eval_s": 12.8,
+    "n_eval": 8,
+    "mean_delta": 8948.12,
+    "mean_final_penalty": 11451.25,
+    "checkpoint": "experiments\\exp05_warm_start\\results\\repair_sweep\\checkpoints\\repair_a1p0_rs50p0_ws36.npz",
+    "per_instance_delta": [
+      12615.0,
+      16675.0,
+      12680.0,
+      1560.0,
+      1710.0,
+      805.0,
+      12160.0,
+      13380.0
+    ],
+    "per_instance_final": [
+      13835.0,
+      18910.0,
+      12660.0,
+      3915.0,
+      3935.0,
+      3930.0,
+      12470.0,
+      21955.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 72,
+    "train_s": 612.41,
+    "eval_s": 12.41,
+    "n_eval": 8,
+    "mean_delta": 9082.5,
+    "mean_final_penalty": 11316.88,
+    "checkpoint": "experiments\\exp05_warm_start\\results\\repair_sweep\\checkpoints\\repair_a1p0_rs50p0_ws72.npz",
+    "per_instance_delta": [
+      13370.0,
+      16290.0,
+      12020.0,
+      1590.0,
+      1930.0,
+      815.0,
+      11610.0,
+      15035.0
+    ],
+    "per_instance_final": [
+      13080.0,
+      19295.0,
+      13320.0,
+      3885.0,
+      3715.0,
+      3920.0,
+      13020.0,
+      20300.0
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "reward_scale": 50.0,
+    "warm_start": 144,
+    "train_s": 608.12,
+    "eval_s": 13.47,
+    "n_eval": 8,
+    "mean_delta": 9090.62,
+    "mean_final_penalty": 11308.75,
+    "checkpoint": "experiments\\exp05_warm_start\\results\\repair_sweep\\checkpoints\\repair_a1p0_rs50p0_ws144.npz",
+    "per_instance_delta": [
+      13355.0,
+      15815.0,
+      11300.0,
+      970.0,
+      2270.0,
+      700.0,
+      12275.0,
+      16040.0
+    ],
+    "per_instance_final": [
+      13095.0,
+      19770.0,
+      14040.0,
+      4505.0,
+      3375.0,
+      4035.0,
+      12355.0,
+      19295.0
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+alpha,reward_scale,warm_start,train_s,eval_s,n_eval,mean_delta,mean_final_penalty,checkpoint
+1.0,1000.0,0,27.17,0.2,8,9381.88,14102.5,experiments\exp05_warm_start\results\week_sweep\checkpoints\week_a1p0_rs1000p0_ws0.npz
+1.0,1000.0,4,26.15,0.19,8,11125.0,12359.38,experiments\exp05_warm_start\results\week_sweep\checkpoints\week_a1p0_rs1000p0_ws4.npz
+1.0,1000.0,8,40.07,0.29,8,10355.62,13128.75,experiments\exp05_warm_start\results\week_sweep\checkpoints\week_a1p0_rs1000p0_ws8.npz
+1.0,1000.0,16,44.08,0.25,8,9561.88,13922.5,experiments\exp05_warm_start\results\week_sweep\checkpoints\week_a1p0_rs1000p0_ws16.npz

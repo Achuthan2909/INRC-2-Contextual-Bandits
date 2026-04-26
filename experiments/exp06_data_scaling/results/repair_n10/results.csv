@@ -1,0 +1,2 @@
+alpha,reward_scale,warm_start,train_s,eval_s,n_eval,mean_delta,mean_final_penalty,checkpoint
+1.0,50.0,36,97.49,15.12,8,8890.0,11509.38,experiments\exp06_data_scaling\results\repair_n10\checkpoints\repair_a1p0_rs50p0_ws36.npz
