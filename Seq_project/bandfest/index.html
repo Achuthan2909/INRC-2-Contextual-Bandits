@@ -3,7 +3,7 @@
   <head>
     <title>Two-Level Contextual Bandits for Nurse Rostering — Bandfest</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <link rel="stylesheet" href="vendor/katex.min.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono&display=swap');
 
@@ -285,7 +285,7 @@ $$\mathcal{P}(\sigma,\,h_1) \;=\; \sum_{i=1}^{7} w_i\, v_i(\sigma,\,h_1)$$
 
 .cols[
 .c1[
-**Why seven terms?** Each $v_i$ counts violations of one soft constraint family; $w_i$ is the contest-specified penalty per violation. We use the official weights throughout.
+**Why seven terms?** Each $v_i$ counts violations of one soft constraint family; $w_i$ is the context-specified penalty per violation. We use the official weights throughout.
 
 .callout[
 Goal: construct a feasible schedule $\sigma$ that **minimises $\mathcal{P}$**.
@@ -413,7 +413,7 @@ $$A_{a^\star} \leftarrow A_{a^\star} + \mathbf{x}\mathbf{x}^\top \qquad b_{a^\st
 .center.w62.shadow[![Week-level cumulative reward: LinUCB vs fixed heuristics](figures/cumulative_reward.png)]
 
 .callout[
-LinUCB tracks the hindsight **best fixed arm** closely. Adaptivity gives **limited additional benefit** beyond picking a strong construction heuristic — this explains why UCB1 (non-contextual) stays competitive in the end-to-end comparison.
+LinUCB tracks the hindsight **best fixed arm** closely. Adaptivity gives **limited additional benefit** beyond picking a strong construction heuristic.
 ]
 
 ---
@@ -523,8 +523,8 @@ Ria Sonalker · Achuthan Rathinam · Jihyeon Yun
     </textarea>
 
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+    <script src="vendor/katex.min.js"></script>
+    <script src="vendor/auto-render.min.js"></script>
     <script>
       var slideshow = remark.create({
         ratio: '16:9',
