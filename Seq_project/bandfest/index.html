@@ -522,9 +522,35 @@ Ria Sonalker · Achuthan Rathinam · Jihyeon Yun
 
     </textarea>
 
-    <script src="vendor/remark.min.js"></script>
     <script src="vendor/katex.min.js"></script>
     <script src="vendor/auto-render.min.js"></script>
+    <script>
+      // Pre-render all math BEFORE remark touches the source.
+      // Remark's markdown parser mangles underscores (A_a → italic),
+      // breaking LaTeX. By converting $$...$$ and $...$ to KaTeX HTML
+      // first, remark sees only plain HTML and passes it through untouched.
+      (function () {
+        var src = document.getElementById('source');
+        var text = src.value;
+
+        // Display math  $$...$$
+        text = text.replace(/\$\$([\s\S]+?)\$\$/g, function (_, math) {
+          try {
+            return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false });
+          } catch (e) { return _; }
+        });
+
+        // Inline math  $...$  (skip $$ already handled above)
+        text = text.replace(/\$([^\$\n]+?)\$/g, function (_, math) {
+          try {
+            return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false });
+          } catch (e) { return _; }
+        });
+
+        src.value = text;
+      })();
+    </script>
+    <script src="vendor/remark.min.js"></script>
     <script>
       var slideshow = remark.create({
         ratio: '16:9',
@@ -533,28 +559,6 @@ Ria Sonalker · Achuthan Rathinam · Jihyeon Yun
         countIncrementalSlides: false,
         navigation: { scroll: false }
       });
-
-      var katexOpts = {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$',  right: '$',  display: false }
-        ],
-        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-        throwOnError: false
-      };
-
-      function renderMath() {
-        window.setTimeout(function () {
-          renderMathInElement(document.body, katexOpts);
-        }, 200);
-      }
-      slideshow.on('afterShowSlide', renderMath);
-      // render all slides up front so they're ready when navigated to
-      window.setTimeout(function () {
-        document.querySelectorAll('.remark-slide-content').forEach(function (el) {
-          renderMathInElement(el, katexOpts);
-        });
-      }, 500);
 
       /* ── annotation canvas ─────────────────────────────────── */
       (function () {
