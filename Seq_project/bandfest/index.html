@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bandfest: Two-Level Bandits for INRC-II</title>
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap');
+
+      body { font-family: 'IBM Plex Sans', sans-serif; }
+      h1, h2, h3 { font-weight: 600; }
+      .remark-code, .remark-inline-code { font-family: 'IBM Plex Mono', monospace; }
+
+      .remark-slide-content {
+        font-size: 22px;
+        padding: 0.85em 1.75em;
+      }
+      .remark-slide-content h1 { font-size: 1.5em; }
+      .remark-slide-content h2 { font-size: 1.25em; }
+
+      .title-slide {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: white;
+      }
+      .title-slide h1 { color: white; font-size: 2em; margin-bottom: 0.3em; line-height: 1.15; }
+      .title-slide h2 { color: rgba(255,255,255,0.9); font-weight: 400; font-size: 1.2em; }
+      .title-slide h3 { color: rgba(255,255,255,0.8); font-weight: 400; font-size: 0.95em; margin-top: 2em; }
+      .title-slide a { color: rgba(255,255,255,0.9); }
+
+      .section-slide { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; }
+      .section-slide h1 { color: white; font-size: 1.85em; }
+      .section-slide a { color: rgba(255,255,255,0.9); }
+
+      .center { text-align: center; }
+      .middle { vertical-align: middle; }
+      .cols { display: flex; gap: 1.5em; align-items: flex-start; }
+      .col-1-2 { flex: 1; min-width: 0; }
+      .compact-list li { margin: 0.35em 0; }
+
+      .small { font-size: 0.85em; }
+      .footnote-size { font-size: 0.72em; }
+      .muted { color: #555; }
+      .green { color: #2e7d32; }
+      .red { color: #c62828; }
+
+      a { color: #5c6bc0; text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-size: 0.92em; }
+      a:hover { text-decoration: underline; }
+
+      img { max-width: 100%; height: auto; }
+      .width-100 img { width: 100%; max-width: 100%; }
+      .width-95 img { width: 95%; max-width: 95%; }
+      .width-90 img { width: 90%; max-width: 90%; }
+      .width-85 img { width: 85%; max-width: 85%; }
+      .width-80 img { width: 80%; max-width: 80%; }
+      .width-70 img { width: 70%; max-width: 70%; }
+      .width-72 img { width: 72%; max-width: 72%; }
+      .width-88 img { width: 88%; max-width: 88%; }
+      .width-65 img { width: 65%; max-width: 65%; }
+      .width-62 img { width: 62%; max-width: 62%; }
+      .width-60 img { width: 60%; max-width: 60%; }
+      .width-58 img { width: 58%; max-width: 58%; }
+      .width-55 img { width: 55%; max-width: 55%; }
+      .width-52 img { width: 52%; max-width: 52%; }
+      .width-48 img { width: 48%; max-width: 48%; }
+      .width-50 img { width: 50%; max-width: 50%; }
+      .shadow img { box-shadow: 0 4px 12px rgba(0,0,0,0.12); border-radius: 4px; }
+
+      /* display math tighter on dense slides */
+      .eq-slide .katex-display { margin: 0.35em 0; }
+
+      blockquote {
+        border-left: 4px solid #ccc;
+        margin: 0.75em 0;
+        padding-left: 1em;
+        font-style: italic;
+        color: #555;
+      }
+
+      .highlight { background: #e3f2fd; border-radius: 8px; padding: 0.65em 0.95em; margin: 0.45em 0; }
+      .warning { background: #fff3e0; border-left: 4px solid #ff9800; border-radius: 0 8px 8px 0; padding: 0.65em 0.95em; margin: 0.45em 0; }
+
+      #annotation-canvas {
+        position: fixed; top: 0; left: 0;
+        width: 100%; height: 100%;
+        pointer-events: none; z-index: 9999;
+      }
+      #annotation-canvas.drawing {
+        pointer-events: auto;
+        cursor: crosshair;
+      }
+      #drawing-indicator {
+        position: fixed; top: 10px; right: 10px;
+        background: rgba(200, 50, 50, 0.9); color: white;
+        padding: 5px 12px; border-radius: 4px; font-size: 13px;
+        font-family: 'IBM Plex Sans', sans-serif; z-index: 10000; display: none;
+      }
+      #drawing-indicator.visible { display: block; }
+    </style>
+  </head>
+  <body>
+    <canvas id="annotation-canvas"></canvas>
+    <div id="drawing-indicator">Drawing mode (d to exit, x to clear)</div>
+    <textarea id="source">
+
+class: middle, title-slide
+
+# Two-Level Contextual Bandits for Nurse Rostering
+
+## Construct → Repair · INRC-II
+
+### Ria Sonalker · Achuthan Rathinam · Jihyeon Yun
+
+DS 592 · Boston University · Bandfest
+
+
+---
+
+# Problem (INRC-II)
+
+.cols[
+.col-1-2[
+**Task:** Assign nurses to shifts over $W$ weeks under **hard feasibility** and **seven soft constraint groups** (coverage vs. optimal, streaks, rest, preferences, weekends, totals).
+
+**Benchmark:** Validator total penalty $\mathcal{P}$ — **lower is better** (weighted sum aligned with contest `validator.jar`).
+]
+.col-1-2[
+.highlight[
+**Idea:** **Two sequential stages** — **construct** the schedule week by week, then **repair** with local feasibility-preserving edits.
+
+]
+Each stage: observe context $\to$ pull an arm $\to$ **bandit feedback** = penalty drop for that step.
+
+.small.muted[Instance = scenario XML + JSON history + one demand file per week.]
+
+]
+
+
+---
+
+class: eq-slide
+
+# How we calculate penalty
+
+For each feasible schedule $\sigma$ and carry-in history $h_1$, the validator aggregates **seven soft violation kinds** $\{v_i\}$ with contest weights $\{w_i\}$:
+
+$$\mathcal{P}(\sigma,h_1) \;=\; \sum_{i=1}^{7} w_i\, v_i(\sigma,h_1)$$
+
+.small.muted[Sums the same weighted soft families as **`validator.jar`**; constants **`W_S1`** … **`W_S7`** live in **`src/schedule/penalty.py`**.]
+
+Our **bandit rewards** are **one-step changes** of that scalar:
+
+$$r^{(w)}_{t} \;=\; \mathcal{P}(\sigma_{\le t-1},h_1)-\mathcal{P}(\sigma_{\le t},h_1),\qquad
+r^{(r)}_{j} \;=\; \mathcal{P}(\sigma_{j-1},h_1)-\mathcal{P}(\sigma_{j},h_1)$$
+
+Week / repair reductions are optionally **scaled by $\rho$** before LinUCB updates (same scaling for baseline algorithms).
+
+
+---
+
+
+# Pipeline
+
+.cols[
+.col-1-2[
+**Week-level** ($K_w = 4$ construction arms)
+
+- Arms differ by **nurse priority** when greedy-filling coverage: coverage-first, fatigue-aware, weekend balancing, preference-respecting.
+
+- Context $x^{(w)}\in\mathbb{R}^6$: slack, fatigue proxies, requests, $\ldots$
+
+- Reward as above $\mathcal{P}$ before/after extending week $t$.
+
+]
+.col-1-2[
+**Repair-level** ($K_r = 18$ operators)
+
+- Local edits targeting residual soft violations while staying feasible.
+
+- Context $x^{(r)}\in\mathbb{R}^7$: **fraction of $\mathcal{P}$** per soft-constraint bundle + repair progress index.
+
+- Reward: $\mathcal{P}$ before minus after the edit (**can be negative**).
+
+]
+
+
+---
+
+
+# Algorithms & evaluation
+
+We compared **LinUCB** to **Uniform**, **UCB1**, **Thompson sampling**, and **$\varepsilon$-greedy** at **each** level (same arms and reward; baselines ignore context).
+
+**Held-out evaluation:** mean final $\mathcal{P}$ after **construction + repair** (repair loop length as in experiments).
+
+
+---
+
+
+# Results: week $\times$ repair
+
+.center.width-80.shadow[![Mean final penalty for each pair; lower is better](figures/exp2_heatmap.png)]
+
+**Best pairing:** **UCB1** (week) $\times$ **LinUCB** (repair) — black border.
+
+LinUCB helps most **at repair** ($K_r=18$, many pulls); weeks per instance ($W$) are few, so a simple Week-UCB1 keeps pace.
+
+
+---
+
+# Construction: adaptive vs fixed
+
+.center.width-55.shadow[![Cumulative week-level penalty reductions vs oracle fixed arm](figures/cumulative_reward.png)]
+
+LinUCB tracks the hindsight **best fixed** construction heuristic — limited upside to adaptivity when $W$ is small.
+
+
+---
+
+
+# Leave-one-feature-out
+
+.cols[
+.col-1-2[
+.center.width-72.shadow[![Week-level ablation](figures/ablation_week.png)]
+.small.center[Week-level LinUCB]
+]
+.col-1-2[
+.center.width-72.shadow[![Repair-level ablation](figures/ablation_repair.png)]
+.small.center[Repair-level LinUCB]
+]
+]
+
+Masking the **coverage-dominance** share hurts **repair** most — violation mix drives routing among operators.
+
+
+---
+
+
+# Out-of-distribution repair starts
+
+Repair is **trained on greedy** schedules.
+
+.center.width-48.shadow[![Penalty vs repair rounds by initialization](figures/ood_curves.png)]
+
+.cols[
+.col-1-2[
+- **Greedy / “mid”** starts: LinUCB **beats** uniform.
+
+- **Near-optimal** branch-and-price starts: prolonged repair often **hurts** — marginal edits collide with already-good structure; contexts look similar despite very different totals.
+
+.small.muted[**Takeaway:** rewards depend on edit **history**, not context alone $\Rightarrow$ MDP / “stop” action, not stationary bandits.]
+
+
+]
+.col-1-2[
+.center.width-60.shadow[![Repair improvement $\Delta$ by start type](figures/ood_delta_per_start.png)]
+]
+
+]
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightStyle: 'github',
+        highlightLines: true,
+        countIncrementalSlides: false,
+        navigation: { scroll: false }
+      });
+
+      function katexAfterSlide() {
+        window.setTimeout(function () {
+          renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false}
+            ],
+            ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          });
+        }, 30);
+      }
+      slideshow.on('showSlide', katexAfterSlide);
+      slideshow.on('afterShowSlide', katexAfterSlide);
+      katexAfterSlide();
+
+      (function() {
+        const canvas = document.getElementById('annotation-canvas');
+        const ctx = canvas.getContext('2d');
+        const indicator = document.getElementById('drawing-indicator');
+        let isDrawing = false;
+        let drawingMode = false;
+        let lastX = 0, lastY = 0;
+        let currentSlideIdx = 0;
+        let canvasDirty = false;
+        const annotations = {};
+
+        function setupCanvas() {
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = window.innerWidth * dpr;
+          canvas.height = window.innerHeight * dpr;
+          canvas.style.width = window.innerWidth + 'px';
+          canvas.style.height = window.innerHeight + 'px';
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.scale(dpr, dpr);
+          ctx.lineCap = 'round';
+          ctx.lineJoin = 'round';
+          ctx.lineWidth = 3;
+          ctx.strokeStyle = '#c62828';
+        }
+
+        function saveAnnotations() {
+          if (canvasDirty) annotations[currentSlideIdx] = canvas.toDataURL();
+        }
+
+        function restoreAnnotations(slideIdx) {
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = window.innerWidth * dpr;
+          canvas.height = window.innerHeight * dpr;
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.scale(dpr, dpr);
+          ctx.lineCap = 'round';
+          ctx.lineJoin = 'round';
+          ctx.lineWidth = 3;
+          ctx.strokeStyle = '#c62828';
+          canvasDirty = false;
+          if (annotations[slideIdx]) {
+            const img = new Image();
+            const targetSlide = slideIdx;
+            img.onload = function() {
+              if (currentSlideIdx !== targetSlide) return;
+              ctx.setTransform(1, 0, 0, 1, 0, 0);
+              ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+              ctx.scale(dpr, dpr);
+            };
+            img.src = annotations[slideIdx];
+          }
+        }
+
+        function clearCurrentSlide() {
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          const dpr = window.devicePixelRatio || 1;
+          ctx.scale(dpr, dpr);
+          delete annotations[currentSlideIdx];
+          canvasDirty = false;
+        }
+
+        function toggleDrawingMode() {
+          drawingMode = !drawingMode;
+          canvas.classList.toggle('drawing', drawingMode);
+          indicator.classList.toggle('visible', drawingMode);
+        }
+
+        function getCoords(e) {
+          if (e.touches && e.touches.length > 0) {
+            return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+          }
+          return { x: e.clientX, y: e.clientY };
+        }
+
+        function startDrawing(e) {
+          if (!drawingMode) return;
+          isDrawing = true;
+          const c = getCoords(e);
+          lastX = c.x;
+          lastY = c.y;
+        }
+
+        function draw(e) {
+          if (!isDrawing || !drawingMode) return;
+          e.preventDefault();
+          const c = getCoords(e);
+          ctx.beginPath();
+          ctx.moveTo(lastX, lastY);
+          ctx.lineTo(c.x, c.y);
+          ctx.stroke();
+          lastX = c.x;
+          lastY = c.y;
+          canvasDirty = true;
+        }
+
+        function stopDrawing() {
+          if (isDrawing) {
+            isDrawing = false;
+            saveAnnotations();
+          }
+        }
+
+        function onHideSlide() {
+          saveAnnotations();
+          if (isDrawing) isDrawing = false;
+        }
+
+        function onShowSlide(slide) {
+          const newSlideIdx = slide ? slide.getSlideIndex() : slideshow.getCurrentSlideIndex();
+          currentSlideIdx = newSlideIdx;
+          restoreAnnotations(currentSlideIdx);
+        }
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+        canvas.addEventListener('touchstart', startDrawing, { passive: false });
+        canvas.addEventListener('touchmove', draw, { passive: false });
+        canvas.addEventListener('touchend', stopDrawing);
+
+        window.addEventListener('resize', function() {
+          saveAnnotations();
+          setupCanvas();
+          restoreAnnotations(currentSlideIdx);
+        });
+
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'd' || e.key === 'D') {
+            toggleDrawingMode();
+            e.stopPropagation();
+          } else if ((e.key === 'x' || e.key === 'X') && drawingMode) {
+            clearCurrentSlide();
+            e.stopPropagation();
+          }
+        });
+
+        function checkSlideChange() {
+          const newIdx = slideshow.getCurrentSlideIndex();
+          if (newIdx !== currentSlideIdx) {
+            saveAnnotations();
+            if (isDrawing) isDrawing = false;
+            currentSlideIdx = newIdx;
+            restoreAnnotations(currentSlideIdx);
+          }
+        }
+
+        document.addEventListener('keyup', checkSlideChange);
+        document.addEventListener('click', checkSlideChange);
+        document.addEventListener('touchend', function() { setTimeout(checkSlideChange, 50); });
+
+        slideshow.on('hideSlide', onHideSlide);
+        slideshow.on('showSlide', onShowSlide);
+        currentSlideIdx = slideshow.getCurrentSlideIndex();
+        setupCanvas();
+      })();
+    </script>
+  </body>
+</html>
