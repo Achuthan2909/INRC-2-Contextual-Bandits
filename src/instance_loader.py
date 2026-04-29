@@ -43,26 +43,25 @@ def load_dataset_files (dataset_root: str | Path, dataset_name: str) -> dict[str
         "week_files": week_files
     }
 
-def load_instance (
-        dataset_root: str | Path,
-        dataset_name: str,
-        history_idx: int,
-        week_indices: list[int]
+def load_instance_from_bundle(
+    dataset_name: str,
+    scenario_file: Path,
+    history_files: list[Path],
+    week_files: list[Path],
+    history_idx: int,
+    week_indices: list[int],
 ) -> INRCInstance:
-    files = load_dataset_files(dataset_root, dataset_name)
-    
-    history_files = files["history_files"]
-    week_files = files["week_files"]
-
-
+    """Load an instance given explicit paths (folder layout agnostic)."""
     if history_idx < 0 or history_idx >= len(history_files):
-        raise IndexError(f"History index {history_idx} out of range (0 to {len(history_files)-1})")
-
+        raise IndexError(
+            f"History index {history_idx} out of range (0 to {len(history_files) - 1})"
+        )
     for idx in week_indices:
         if idx < 0 or idx >= len(week_files):
-            raise IndexError(f"Week index {idx} out of range (0 to {len(week_files)-1})")
+            raise IndexError(
+                f"Week index {idx} out of range (0 to {len(week_files) - 1})"
+            )
 
-    scenario_file = files["scenario_file"]
     history_file = history_files[history_idx]
     chosen_week_files = [week_files[i] for i in week_indices]
 
@@ -77,7 +76,24 @@ def load_instance (
         weeks=weeks,
         history_file=history_file.name,
         week_files=[p.name for p in chosen_week_files],
-        scenario_file=scenario_file.name
+        scenario_file=scenario_file.name,
+    )
+
+
+def load_instance(
+    dataset_root: str | Path,
+    dataset_name: str,
+    history_idx: int,
+    week_indices: list[int],
+) -> INRCInstance:
+    files = load_dataset_files(dataset_root, dataset_name)
+    return load_instance_from_bundle(
+        dataset_name=dataset_name,
+        scenario_file=files["scenario_file"],
+        history_files=files["history_files"],
+        week_files=files["week_files"],
+        history_idx=history_idx,
+        week_indices=week_indices,
     )
 
 def summarize_instance(instance: INRCInstance) -> None:
